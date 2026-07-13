@@ -1,3 +1,4 @@
+import { SITE_TITLE, SITE_DESCRIPTION } from './seo/titles';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { Navbar } from './components/Navbar';
@@ -13,8 +14,8 @@ const StorePage = lazy(() => import('./pages/Store').then((m) => ({ default: m.S
 const BlogListPage = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogListPage })));
 const BlogPostPage = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogPostPage })));
 
-const HOME_TITLE = 'Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack';
-const HOME_DESCRIPTION = 'Buy sand cheats and SAND Raiders of Sophie cheats — private Legit ESP, wallhack, and loot overlays with patch updates and Discord support.';
+const HOME_TITLE = SITE_TITLE;
+const HOME_DESCRIPTION = SITE_DESCRIPTION;
 
 const HOME_IMAGES = [
   `${SITE_URL}/sand-cheats-hero-og.jpg`,

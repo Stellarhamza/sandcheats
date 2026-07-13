@@ -55,9 +55,19 @@ function withSecurityHeaders(response, requestUrl) {
     : requestUrl.pathname;
   const canonical = `https://${APEX}${path === '/' ? '/' : path}${requestUrl.search}`;
   headers.set('Link', `<${canonical}>; rel="canonical"`);
-  if (!headers.has('Content-Type') && path.endsWith('.html') === false && path === '/') {
+
+  const contentType = headers.get('Content-Type') || '';
+  const looksHtml =
+    contentType.includes('text/html') ||
+    path === '/' ||
+    path.endsWith('.html') ||
+    (!contentType && !/\.[a-z0-9]{2,5}$/i.test(path));
+  if (looksHtml) {
     headers.set('Content-Type', 'text/html; charset=utf-8');
+  } else if (contentType.startsWith('text/') && !/charset=/i.test(contentType)) {
+    headers.set('Content-Type', `${contentType}; charset=utf-8`);
   }
+
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,

@@ -50,5 +50,9 @@ if (checks.internal < 5 || checks.external < 3) {
   console.error('FAIL: missing internal/external links before first <script>');
   process.exit(1);
 }
+if (checks.strong > 20) {
+  console.error(`FAIL: too many <strong> tags before first script (${checks.strong})`);
+  process.exit(1);
+}
 
 console.log('SEO body order OK');

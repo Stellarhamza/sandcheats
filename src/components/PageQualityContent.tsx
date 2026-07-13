@@ -1,17 +1,6 @@
 import { HOME_ARTICLE } from '../seo/homeArticle';
 import { AnimatedSection } from './AnimatedSection';
 
-function withStrong(text: string) {
-  return text
-    .split(/(Sand Cheats|SAND Raiders of Sophie|sand cheats|\bESP\b|wallhack)/gi)
-    .map((part, i) => {
-      if (/^(Sand Cheats|SAND Raiders of Sophie|sand cheats|ESP|wallhack)$/i.test(part)) {
-        return <strong key={`${part}-${i}`}>{part}</strong>;
-      }
-      return part;
-    });
-}
-
 /** Visible long-form content so SEO tools detect paragraphs + 500+ words */
 export function PageQualityContent() {
   return (
@@ -59,7 +48,7 @@ export function PageQualityContent() {
             }}
           >
             {HOME_ARTICLE.paragraphs.map((text) => (
-              <p key={text.slice(0, 48)}>{withStrong(text)}</p>
+              <p key={text.slice(0, 48)}>{text}</p>
             ))}
             {HOME_ARTICLE.h3s.map((block) => (
               <div key={block.title} style={{ marginTop: 8 }}>
@@ -75,7 +64,7 @@ export function PageQualityContent() {
                 >
                   {block.title}
                 </h3>
-                <p>{withStrong(block.text)}</p>
+                <p>{block.text}</p>
               </div>
             ))}
           </article>

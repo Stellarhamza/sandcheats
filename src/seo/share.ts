@@ -1,6 +1,6 @@
 /** Canonical share / social-embed copy for Sand Cheats */
 export const SITE_URL = 'https://sandcheats.net';
-export const SHARE_TITLE = 'Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack';
+export const SHARE_TITLE = 'Sand Cheats – SAND ESP & Wallhack';
 export const SHARE_TEXT =
   'Buy Sand Cheats — private Legit ESP & wallhack for SAND Raiders of Sophie. Patch updates and Discord support.';
 

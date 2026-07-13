@@ -5,24 +5,14 @@ import { SHARE_FACEBOOK, SHARE_REDDIT, SHARE_TWITTER } from '../src/seo/share.ts
 
 const safeParas = HOME_ARTICLE.paragraphs
   .map((p) => {
-    let t = p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    t = t.replace(/Sand Cheats/g, '<strong>Sand Cheats</strong>');
-    t = t.replace(/SAND Raiders of Sophie/g, '<strong>SAND Raiders of Sophie</strong>');
-    t = t.replace(/sand cheats/g, '<strong>sand cheats</strong>');
-    t = t.replace(/\bESP\b/g, '<strong>ESP</strong>');
-    t = t.replace(/\bwallhack\b/gi, (m) => `<strong>${m}</strong>`);
+    const t = p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     return `          <p>${t}</p>`;
   })
   .join('\n');
 
 const safeH3s = HOME_ARTICLE.h3s
   .map((block) => {
-    let t = block.text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    t = t.replace(/Sand Cheats/g, '<strong>Sand Cheats</strong>');
-    t = t.replace(/SAND Raiders of Sophie/g, '<strong>SAND Raiders of Sophie</strong>');
-    t = t.replace(/sand cheats/g, '<strong>sand cheats</strong>');
-    t = t.replace(/\bESP\b/g, '<strong>ESP</strong>');
-    t = t.replace(/\bwallhack\b/gi, (m) => `<strong>${m}</strong>`);
+    const t = block.text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     const title = block.title.replace(/&/g, '&amp;');
     return `        <h3>${title}</h3>\n          <p>${t}</p>`;
   })
@@ -42,8 +32,8 @@ const blogLinks = BLOG_META.map(
 const body = `  <body style="background:#060409;margin:0;min-height:100vh;color:#f0ecff;font-family:Arial,Helvetica,sans-serif;line-height:1.75">
     <main id="seo-landmarks" aria-hidden="false" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
       <header>
-        <h1>Sand Cheats | SAND Raiders of Sophie Cheats – ESP &amp; Wallhack</h1>
-        <p>Buy <strong>sand cheats</strong> and <strong>SAND Raiders of Sophie</strong> cheats — private Legit <strong>ESP</strong>, <strong>wallhack</strong>, and loot overlays from <strong>Sand Cheats</strong> with patch updates and Discord support.</p>
+        <h1>Sand Cheats – SAND ESP &amp; Wallhack</h1>
+        <p>Buy sand cheats and SAND Raiders of Sophie cheats — private Legit ESP, wallhack, and loot overlays from Sand Cheats with patch updates and Discord support.</p>
         <p><img src="/sand-cheats-hero-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats hero — SAND Raiders of Sophie dunes for ESP and wallhack" /></p>
         <p><img src="/sand-cheats-player-esp-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats player ESP and wallhack preview" /></p>
         <p><img src="/sand-cheats-loot-esp-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats loot ESP preview" /></p>
@@ -101,7 +91,7 @@ ${blogLinks}
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack",
+      "name": "Sand Cheats – SAND ESP & Wallhack",
       "url": "https://sandcheats.net/",
       "image": "https://sandcheats.net/sand-cheats-hero-og.jpg",
       "screenshot": [
@@ -203,7 +193,7 @@ ${blogLinks}
         "@type": "ContactPoint",
         "contactType": "customer support",
         "url": "https://discord.gg/zadeyo",
-        "availableLanguage": ["English", "Russian"]
+        "availableLanguage": ["en", "ru"]
       }
     }
     </script>

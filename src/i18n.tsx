@@ -36,7 +36,7 @@ const translations: Record<string, Record<string, string>> = {
   'hero.cta': 'Purchase Now',
   'hero.features': 'See Features',
   'hero.trust': 'Windows 10 & 11 · Steam · Easy Anti-Cheat · External ESP',
-  'meta.title': 'Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack',
+  'meta.title': 'Sand Cheats – SAND ESP & Wallhack',
   'meta.description': 'Buy sand cheats and SAND Raiders of Sophie cheats — private Legit ESP, wallhack, and loot overlays with patch updates and Discord support.',
 },
  de: {

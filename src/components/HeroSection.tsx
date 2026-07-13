@@ -119,7 +119,7 @@ export function HeroSection() {
                 Sand Cheats
               </span>
               <span style={{ display: 'block', color: 'var(--text-primary)', fontSize: 'clamp(1.35rem, 3vw, 2.6rem)', lineHeight: 1.2, marginTop: '10px' }}>
-                SAND Raiders of Sophie Cheats – ESP & Wallhack
+                SAND ESP & Wallhack
               </span>
             </h1>
           </div>
