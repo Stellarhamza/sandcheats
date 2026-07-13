@@ -1,5 +1,10 @@
 # Cloudflare Workers static assets (Vite SPA)
 # Worker name must match Cloudflare project: sandcheats
+#
+# www → apex 301 is implemented in worker/index.js.
+# Add DNS in Cloudflare for that to work:
+#   Type: CNAME | Name: www | Target: sandcheats.net | Proxy: ON
+# Then attach www.sandcheats.net as a Workers custom domain (same as apex).
 
 name = "sandcheats"
 main = "worker/index.js"

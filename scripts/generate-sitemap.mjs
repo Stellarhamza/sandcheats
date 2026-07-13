@@ -9,9 +9,7 @@ const PUBLIC = path.join(ROOT, 'public');
 const SITE = 'https://sandcheats.net';
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const HREFLANGS = [
-  'en', 'de', 'fr', 'es', 'pt', 'ru', 'zh', 'ja', 'ko', 'tr', 'pl', 'nl', 'it', 'ar', 'th', 'vi',
-];
+const HREFLANGS = ['en'];
 
 const metaPath = path.join(ROOT, 'src', 'data', 'blogMeta.ts');
 const metaSrc = fs.readFileSync(metaPath, 'utf8');
@@ -54,12 +52,10 @@ function imageBlock({ loc, title, caption }) {
 
 function hreflangLinks(pathSuffix = '/') {
   const base = pathSuffix === '/' ? `${SITE}/` : `${SITE}${pathSuffix}`;
-  const lines = HREFLANGS.map(
-    (code) =>
-      `    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE}${pathSuffix === '/' ? '/' : pathSuffix}?lang=${code}" />`
-  );
-  lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${base}" />`);
-  return lines.join('\n');
+  return [
+    `    <xhtml:link rel="alternate" hreflang="en" href="${base}" />`,
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${base}" />`,
+  ].join('\n');
 }
 
 function urlEntry({

@@ -42,6 +42,7 @@ const SECURITY_HEADERS = {
   'Cross-Origin-Opener-Policy': 'same-origin-allow-popups',
   'Content-Security-Policy': CSP,
   'X-DNS-Prefetch-Control': 'on',
+  'Content-Language': 'en',
 };
 
 function withSecurityHeaders(response, requestUrl) {

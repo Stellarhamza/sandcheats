@@ -260,17 +260,15 @@ export function I18nProvider({ children }: { children: ReactNode }) {
  const setLang = (newLang: string) => {
   setLangState(newLang);
   localStorage.setItem('lang', newLang);
-  document.documentElement.lang = newLang;
+  document.documentElement.lang = newLang === 'zh' ? 'zh' : newLang;
   document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
   updateMetaTags(newLang);
-  updateHreflangLinks();
  };
 
  useEffect(() => {
-  document.documentElement.lang = lang;
+  document.documentElement.lang = lang === 'zh' ? 'zh' : lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   updateMetaTags(lang);
-  updateHreflangLinks();
  }, []);
 
  const t = (key: string): string => {
@@ -312,25 +310,4 @@ function updateMetaTags(lang: string) {
 
  const twDesc = document.querySelector('meta[name="twitter:description"]');
  if (twDesc) twDesc.setAttribute('content', description);
-}
-
-function updateHreflangLinks() {
- document.querySelectorAll('link[hreflang]').forEach(el => el.remove());
-
- const base = 'https://sandcheats.net';
- const head = document.head;
-
- LANGUAGES.forEach(({ code }) => {
-  const link = document.createElement('link');
-  link.rel = 'alternate';
-  link.hreflang = code;
-  link.href = `${base}/?lang=${code}`;
-  head.appendChild(link);
- });
-
- const xDefault = document.createElement('link');
- xDefault.rel = 'alternate';
- xDefault.hreflang = 'x-default';
- xDefault.href = base + '/';
- head.appendChild(xDefault);
 }
