@@ -261,7 +261,7 @@ export function ProductCopy() {
               className="btn-ghost"
               style={{ marginTop: 28, display: 'inline-flex', fontSize: '0.9375rem', padding: '14px 28px' }}
             >
-              Join Discord Support
+              Join Sand Cheats Discord Support
             </a>
           </AnimatedSection>
         </div>

@@ -73,7 +73,7 @@ export function Integrations() {
             textTransform: 'uppercase',
             lineHeight: 1.05,
           }}>
-            Built for your setup.
+            Built for Sand Cheats.
           </h2>
         </div>
       </div>

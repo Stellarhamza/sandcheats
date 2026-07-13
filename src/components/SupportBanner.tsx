@@ -223,7 +223,7 @@ export function SupportBanner() {
                   rel="noopener noreferrer"
                 >
                   <DiscordIcon />
-                  Join Discord
+                  Join Sand Cheats Discord
                 </a>
               </div>
             </div>

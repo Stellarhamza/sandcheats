@@ -1,9 +1,10 @@
 import type { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { SAND_CLUSTER } from '../seo/cluster';
+import { SHARE_DISCORD, SHARE_FACEBOOK, SHARE_REDDIT, SHARE_TWITTER } from '../seo/share';
 
 const ZADEYO_STORE = 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie';
-const DISCORD = 'https://discord.gg/zadeyo';
+const DISCORD = SHARE_DISCORD;
 
 const linkStyle = {
   color: 'var(--text-muted)',
@@ -111,8 +112,8 @@ export function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <FootLink to="/">Sand Cheats home</FootLink>
               <FootLink to="/buy">Buy Sand Cheats</FootLink>
-              <FootLink to={ZADEYO_STORE}>Checkout on Zadeyo store</FootLink>
-              <FootLink to={DISCORD}>Join Zadeyo Discord support</FootLink>
+              <FootLink to={ZADEYO_STORE}>Buy Sand Cheats on Zadeyo</FootLink>
+              <FootLink to={DISCORD}>Join Sand Cheats Discord support</FootLink>
             </div>
           </div>
 
@@ -147,9 +148,9 @@ export function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <FootLink to="/#about-cheat">Product information &amp; Legit policy</FootLink>
               <FootLink to="/blog/staying-updated-after-patches">Wipe update &amp; loader safety guide</FootLink>
-              <FootLink to={DISCORD}>Share feedback on Discord</FootLink>
+              <FootLink to={DISCORD}>Share Sand Cheats feedback on Discord</FootLink>
               <a
-                href="https://twitter.com/intent/tweet?text=Sand%20Cheats%20ESP%20%26%20Wallhack&url=https%3A%2F%2Fsandcheats.net%2F"
+                href={SHARE_TWITTER}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -160,10 +161,10 @@ export function Footer() {
                   lineHeight: 1.5,
                 }}
               >
-                Share on X / Twitter
+                Share Sand Cheats on X / Twitter
               </a>
               <a
-                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsandcheats.net%2F"
+                href={SHARE_FACEBOOK}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -174,10 +175,10 @@ export function Footer() {
                   lineHeight: 1.5,
                 }}
               >
-                Share on Facebook
+                Share Sand Cheats on Facebook
               </a>
               <a
-                href="https://www.reddit.com/submit?url=https%3A%2F%2Fsandcheats.net%2F&title=Sand%20Cheats"
+                href={SHARE_REDDIT}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -188,7 +189,7 @@ export function Footer() {
                   lineHeight: 1.5,
                 }}
               >
-                Share on Reddit
+                Share Sand Cheats on Reddit
               </a>
               <span style={{
                 fontFamily: 'var(--font-body)',

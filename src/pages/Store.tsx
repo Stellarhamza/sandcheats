@@ -410,7 +410,7 @@ export function StorePage() {
                     Buy on Zadeyo — $35/mo
                   </a>
                   <a href={DISCORD} target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ width: '100%', justifyContent: 'center', fontSize: '0.875rem' }}>
-                    Ask support on Discord
+                    Ask Sand Cheats support on Discord
                   </a>
                 </div>
 

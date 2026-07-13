@@ -254,7 +254,7 @@ export function Navbar() {
             href="https://discord.gg/zadeyo"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Join our Discord"
+            aria-label="Join Sand Cheats Discord"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -379,7 +379,7 @@ export function Navbar() {
               border: '1px solid var(--border-ghost)',
             }}
           >
-            Zadeyo store
+            Buy Sand Cheats
           </a>
 
           <p style={{

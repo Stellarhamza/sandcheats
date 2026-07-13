@@ -5,7 +5,7 @@ const steps = [
   {
     num: '01',
     title: 'Purchase & Download',
-    desc: 'Complete your purchase on the Zadeyo web checkout. Right after payment, your order page shows the loader download and setup—plus a video guide.',
+    desc: 'Complete your Sand Cheats purchase on the Zadeyo web checkout. Right after payment, your order page shows the loader download and setup—plus a video guide.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -29,7 +29,7 @@ const steps = [
   {
     num: '03',
     title: 'Load & Dominate',
-    desc: 'Open the loader, start the client, and press OK. ESP is active — overlays ready for every run.',
+    desc: 'Open the Sand Cheats loader, start the client, and press OK. ESP is active — overlays ready for every run.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="5 3 19 12 5 21 5 3"/>

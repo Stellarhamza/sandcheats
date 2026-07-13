@@ -39,13 +39,13 @@ function PixelAvatar({ seed, size = 52 }: { seed: number; size?: number }) {
 const reviews = [
   { name: 'Sway', quote: 'Support solved my Sand Cheats loader issue quick and easy. Fast response times every time — never had a hard time getting things fixed.', date: 'May 8, 2026' },
   { name: 'Joey Scalia', quote: 'Answered fast. Most reliable for answers and info on Sand Cheats setup. Great experience overall.', date: 'May 8, 2026' },
-  { name: 'Ash', quote: 'Had trouble with first launch so I opened a ticket. Support walked me through it and had it sorted in under five minutes. Cheat runs great in Sand Cheats.', date: 'May 8, 2026' },
-  { name: 'Adian Hipsz', quote: 'Fast to respond with solid solutions. They answered every question in detail and did not rush me off the line.', date: 'May 8, 2026' },
-  { name: 'Tony WoW', quote: 'Patch dropped and something broke on my side — team pointed me to the right build and it was working again same day. Thanks.', date: 'May 8, 2026' },
-  { name: 'taj taj', quote: 'Support and the dev updates are the real deal. Sand Cheats has been stable for me for weeks.', date: 'May 7, 2026' },
-  { name: 'Alex Moreno', quote: 'Best support I have used for a game cheat. They fixed my HWID question fast and explained what to do next time.', date: 'May 7, 2026' },
-  { name: 'Fuzzy JD', quote: 'Very willing to help. Someone stayed with me for well over an hour until Easy Anti-Cheat and my overlay setup were sorted. Really appreciated.', date: 'May 7, 2026' },
-  { name: 'CQB_Gamer', quote: 'Very good support — they took their time and stayed until my Sand Cheats issue was fully solved. Would use again.', date: 'May 7, 2026' },
+  { name: 'Ash', quote: 'Had trouble with first launch so I opened a ticket. Support walked me through it and had Sand Cheats sorted in under five minutes. ESP overlays run great.', date: 'May 8, 2026' },
+  { name: 'Adian Hipsz', quote: 'Fast to respond with solid Sand Cheats solutions. They answered every question in detail and did not rush me off the line.', date: 'May 8, 2026' },
+  { name: 'Tony WoW', quote: 'Patch dropped and something broke on my side — Sand Cheats support pointed me to the right build and it was working again same day. Thanks.', date: 'May 8, 2026' },
+  { name: 'taj taj', quote: 'Support and the Sand Cheats loader updates are the real deal. Has been stable for me for weeks.', date: 'May 7, 2026' },
+  { name: 'Alex Moreno', quote: 'Best support I have used for Sand Cheats. They fixed my HWID question fast and explained what to do next time.', date: 'May 7, 2026' },
+  { name: 'Fuzzy JD', quote: 'Very willing to help with Sand Cheats. Someone stayed with me for well over an hour until Easy Anti-Cheat and my overlay setup were sorted. Really appreciated.', date: 'May 7, 2026' },
+  { name: 'CQB_Gamer', quote: 'Very good Sand Cheats support — they took their time and stayed until my issue was fully solved. Would use again.', date: 'May 7, 2026' },
 ];
 
 function StarRating() {
@@ -106,7 +106,7 @@ function ReviewCard({ review, idx }: { review: (typeof reviews)[number]; idx: nu
 function ReviewsIntro() {
   return (
     <>
-      <p className="section-label" style={{ marginBottom: 20 }}>Happy Clients</p>
+      <p className="section-label" style={{ marginBottom: 20 }}>Sand Cheats Reviews</p>
       <h2 style={{
         fontFamily: 'var(--font-display)',
         fontWeight: 900,
@@ -117,7 +117,7 @@ function ReviewsIntro() {
         textTransform: 'uppercase',
         marginBottom: 20,
       }}>
-        What Our<br />
+        What Sand Cheats<br />
         <span className="gradient-text">Customers Say</span>
       </h2>
       <p style={{
@@ -166,7 +166,7 @@ function ReviewsIntro() {
           target="_blank" rel="noopener noreferrer"
           className="btn-primary"
           style={{ padding: '14px 28px', fontSize: '0.875rem', width: '100%', maxWidth: 320 }}
-        >Shop Now</a>
+        >Buy Sand Cheats</a>
       </div>
     </>
   );
