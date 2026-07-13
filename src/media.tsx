@@ -4,45 +4,45 @@ import type { CSSProperties } from 'react';
 
 export const MEDIA = {
   playerEsp: {
-    src: '/dark-and-darker-player-esp-skeleton-wallhack.webp',
-    fallback: '/dark-and-darker-player-esp-skeleton-wallhack.png',
-    alt: 'Dark and Darker player ESP wallhack showing skeleton overlays, bounding boxes, health bars, and distance markers in a dungeon',
+    src: '/sand-cheats-player-esp.webp',
+    fallback: '/sand-cheats-player-esp-og.jpg',
+    alt: 'Sand Cheats — SAND Raiders of Sophie desert island approach screenshot used with player ESP and wallhack coverage',
   },
   lootEsp: {
-    src: '/dark-and-darker-loot-esp-chest-wallhack.webp',
-    fallback: '/dark-and-darker-loot-esp-chest-wallhack.png',
-    alt: 'Dark and Darker loot ESP wallhack revealing chests, gear, and mobs through dungeon walls with distance labels',
+    src: '/sand-cheats-loot-esp.webp',
+    fallback: '/sand-cheats-loot-esp-og.jpg',
+    alt: 'Sand Cheats — night raid on Sophie island screenshot for loot ESP and through-wall loot awareness',
   },
   mobEsp: {
-    src: '/dark-and-darker-esp-mob-trap-wallhack.webp',
-    fallback: '/dark-and-darker-esp-mob-trap-wallhack.png',
-    alt: 'Dark and Darker ESP cheat highlighting Skeleton Footman, traps, ore, and dungeon enemies through walls',
+    src: '/sand-cheats-trampler-showcase.webp',
+    fallback: '/sand-cheats-trampler-showcase-og.jpg',
+    alt: 'Sand Cheats — Trampler desert combat screenshot highlighting ESP visuals for walkers, NPCs, and rivals',
   },
   heroLcp: {
-    src: '/hero-dark-and-darker-esp-lcp.webp',
-    fallback: '/dark-and-darker-player-esp-skeleton-wallhack.png',
-    alt: 'Dark and Darker player ESP wallhack showing skeleton overlays, bounding boxes, health bars, and distance markers in a dungeon',
+    src: '/hero-sand-cheats-player-esp-lcp.webp',
+    fallback: '/sand-cheats-hero-og.jpg',
+    alt: 'Sand Cheats — dune rumble screenshot for SAND Raiders of Sophie ESP and wallhack cheats',
   },
   socialPreview: {
-    src: '/dark-and-darker-cheats-social-preview.png',
-    fallback: '/dark-and-darker-cheats-social-preview.png',
-    alt: 'Dark and Darker Cheats — ESP and wallhack social preview',
+    src: '/sand-cheats-social-preview.jpg',
+    fallback: '/sand-cheats-social-preview.jpg',
+    alt: 'Sand Cheats — ESP and wallhack social preview',
   },
   ogGoogle: {
-    src: '/og-google-preview.png',
-    fallback: '/og-google-preview.png',
-    alt: 'Dark and Darker Cheats ESP wallhack preview for search and social sharing',
+    src: '/og-google-preview.jpg',
+    fallback: '/og-google-preview.jpg',
+    alt: 'Sand Cheats ESP wallhack preview for search and social sharing',
   },
 } as const;
 
 export const SHOWCASE_IMAGES = [MEDIA.playerEsp, MEDIA.lootEsp, MEDIA.mobEsp] as const;
 
 export const BLOG_IMAGES = {
-  esp: '/blog-dark-and-darker-esp-guide.jpg',
-  loot: '/blog-dark-and-darker-loot-esp.jpg',
-  player: '/blog-dark-and-darker-player-esp.jpg',
-  guide: '/blog-dark-and-darker-guide.jpg',
-  comparison: '/blog-dark-and-darker-cheats-comparison.jpg',
+  esp: '/blog-sand-esp-guide.jpg',
+  loot: '/blog-sand-loot-esp.jpg',
+  player: '/blog-sand-player-esp.jpg',
+  guide: '/blog-sand-guide.jpg',
+  comparison: '/blog-sand-cheats-comparison.jpg',
 } as const;
 
 type SeoImageProps = {

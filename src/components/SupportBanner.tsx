@@ -199,7 +199,7 @@ export function SupportBanner() {
                     maxWidth: '34ch',
                   }}
                 >
-                  Talk to our support team — 24/7 Discord help for setup, orders, and Dark and Darker issues.
+                  Talk to our support team — 24/7 Discord help for setup, orders, and Sand Cheats issues.
                 </h2>
                 <p
                   className="support-banner-desc"

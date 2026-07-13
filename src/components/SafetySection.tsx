@@ -1,5 +1,96 @@
+import { useRef, useState } from 'react';
 import { AnimatedSection } from './AnimatedSection';
-import { MEDIA, SeoImage } from '../media';
+
+const DEMO_VIDEOS = [
+  {
+    src: 'https://bryjchknhsrmjdunnfer.supabase.co/storage/v1/object/public/575/sandraiders.mp4',
+    label: 'Play Sand Cheats demo video 1',
+  },
+  {
+    src: 'https://media.kernaim.to/products/sand-raiders-of-sophie/gif-1783608549085.mp4',
+    label: 'Play Sand Cheats demo video 2',
+  },
+] as const;
+
+function ClickToPlayVideo({ src, label }: { src: string; label: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
+
+  function handlePlayClick() {
+    const video = videoRef.current;
+    if (!video) return;
+    void video.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+  }
+
+  return (
+    <div style={{
+      flex: '1 1 0',
+      minHeight: 160,
+      borderRadius: 'var(--radius-xl)',
+      overflow: 'hidden',
+      position: 'relative',
+      zIndex: 1,
+      border: '1px solid var(--border-ghost)',
+      background: '#000',
+      aspectRatio: '16 / 9',
+    }}>
+      <video
+        ref={videoRef}
+        src={src}
+        preload="metadata"
+        playsInline
+        controls={playing}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+        onPlay={() => setPlaying(true)}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          display: 'block',
+          background: '#000',
+        }}
+      >
+        Your browser does not support the video tag.
+      </video>
+
+      {!playing && (
+        <button
+          type="button"
+          onClick={handlePlayClick}
+          aria-label={label}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            zIndex: 2,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(6,4,9,0.45)',
+            border: 'none',
+            cursor: 'pointer',
+            padding: 0,
+          }}
+        >
+          <span style={{
+            width: 64,
+            height: 64,
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg, #c084fc 0%, #7c3aed 100%)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 8px 32px rgba(124,58,237,0.45)',
+          }}>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </span>
+        </button>
+      )}
+    </div>
+  );
+}
 
 export function SafetySection() {
   return (
@@ -45,7 +136,7 @@ export function SafetySection() {
                 marginBottom: 28,
               }}>
                 Why Choose<br />
-                <span className="gradient-text">DarkerCheats?</span>
+                <span className="gradient-text">Sand Cheats?</span>
               </h2>
 
               <div style={{
@@ -58,19 +149,19 @@ export function SafetySection() {
                 gap: 16,
               }}>
                 <p>
-                  When you choose DarkerCheats for Dark and Darker cheats, you&apos;re choosing quality, reliability, and
-                  serious support. We have backed these Dark and Darker cheats since Steam closed beta — Legit-only ESP,
-                  wipe-to-wipe updates, and no Rage features.
+                  When you choose Sand Cheats, you&apos;re choosing quality, reliability, and
+                  serious support. We have backed this Legit-only ESP product with wipe-to-wipe updates
+                  and no Rage features.
                 </p>
                 <p>
-                  Discord support stays online for setup and wipe questions. We ship loader updates after Ironmace patches
+                  Discord support stays online for setup and wipe questions. We ship loader updates after patches
                   as quickly as we can — often the same day a wipe lands. No provider can promise zero bans; we focus on
                   external Legit ESP and staying current.
                 </p>
                 <p>
-                  Checkout and delivery stay fast: buy Dark and Darker cheats from DarkerCheats, get instant access to your
-                  loader and setup guide, then dial in enemy ESP, chests, portals, traps, and colors for the dungeon.
-                  Right now is as good a time as ever to start. Choose DarkerCheats. Start extracting.
+                  Checkout and delivery stay fast: buy Sand Cheats, get instant access to your
+                  loader and setup guide, then dial in enemy ESP, loot overlays, and colors.
+                  Right now is as good a time as ever to start.
                 </p>
               </div>
             </div>
@@ -93,28 +184,10 @@ export function SafetySection() {
                 pointerEvents: 'none',
                 zIndex: 0,
               }} aria-hidden="true" />
-              <div style={{
-                flex: '1 1 0',
-                minHeight: 160,
-                borderRadius: 'var(--radius-xl)',
-                overflow: 'hidden',
-                position: 'relative',
-                zIndex: 1,
-                border: '1px solid var(--border-ghost)',
-              }}>
-                <SeoImage src={MEDIA.lootEsp.src} alt={MEDIA.lootEsp.alt} />
-              </div>
-              <div style={{
-                flex: '1 1 0',
-                minHeight: 160,
-                borderRadius: 'var(--radius-xl)',
-                overflow: 'hidden',
-                position: 'relative',
-                zIndex: 1,
-                border: '1px solid var(--border-ghost)',
-              }}>
-                <SeoImage src={MEDIA.mobEsp.src} alt={MEDIA.mobEsp.alt} />
-              </div>
+
+              {DEMO_VIDEOS.map((video) => (
+                <ClickToPlayVideo key={video.src} src={video.src} label={video.label} />
+              ))}
             </div>
           </div>
         </AnimatedSection>

@@ -20,8 +20,8 @@ export default {
       return redirect(url.toString());
     }
 
-    if (url.hostname === 'www.darkanddarkercheats.com') {
-      url.hostname = 'darkanddarkercheats.com';
+    if (url.hostname === 'www.sandcheats.net') {
+      url.hostname = 'sandcheats.net';
       return redirect(url.toString());
     }
 

@@ -29,7 +29,7 @@ const steps = [
   {
     num: '03',
     title: 'Load & Dominate',
-    desc: 'Open the loader, launch Dark and Darker, and press OK inside the dungeon. ESP is active. Extract with confidence every single run.',
+    desc: 'Open the loader, start the client, and press OK. ESP is active — overlays ready for every run.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="5 3 19 12 5 21 5 3"/>

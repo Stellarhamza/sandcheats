@@ -1,7 +1,7 @@
 # Cloudflare Workers static assets (Vite SPA)
-# Worker name must match Cloudflare project: darkanddarker
+# Worker name must match Cloudflare project: sandcheats
 
-name = "darkanddarker"
+name = "sandcheats"
 main = "worker/index.js"
 compatibility_date = "2026-07-12"
 workers_dev = true

@@ -27,7 +27,7 @@ function BlogCard({ post, featured = false }: { post: BlogMeta; featured?: boole
         <div style={{ position: 'relative', overflow: 'hidden', aspectRatio: featured ? '16/7' : '16/9' }}>
           <img
             src={post.image}
-            alt={`${post.title} — Dark and Darker cheat guide screenshot with ESP wallhack`}
+            alt={`${post.title} — Sand Cheats blog cover`}
             title={post.title}
             width={1920}
             height={1080}
@@ -132,14 +132,14 @@ export function BlogListPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Blog',
-            name: 'Dark and Darker Cheat Blog',
-            url: 'https://darkanddarkercheats.com/blog',
-            description: 'Guides and comparisons for Dark and Darker ESP, safety, and wipe updates.',
+            name: 'Sand Cheats Blog',
+            url: 'https://sandcheats.net/blog',
+            description: 'Guides and comparisons for Sand Cheats ESP, safety, and wipe updates.',
             blogPost: BLOG_META.map((post) => ({
               '@type': 'BlogPosting',
               headline: post.title,
-              url: `https://darkanddarkercheats.com/blog/${post.slug}`,
-              image: `https://darkanddarkercheats.com${post.image}`,
+              url: `https://sandcheats.net/blog/${post.slug}`,
+              image: `https://sandcheats.net${post.image}`,
               description: post.excerpt,
               datePublished: post.date,
             })),
@@ -164,7 +164,7 @@ export function BlogListPage() {
           pointerEvents: 'none',
         }} />
         <AnimatedSection>
-          <p className="section-label" style={{ justifyContent: 'center', marginBottom: 16 }}>Dark And Darker Guides</p>
+          <p className="section-label" style={{ justifyContent: 'center', marginBottom: 16 }}>Sand Cheats Guides</p>
           <h1 style={{
             fontFamily: 'var(--font-display)',
             fontWeight: 900,
@@ -175,9 +175,9 @@ export function BlogListPage() {
             lineHeight: 1.05,
             margin: '0 auto 16px',
           }}>
-            Dark And Darker Cheat Blog
+            Sand Cheats Blog
             <span className="gradient-text" style={{ display: 'block', marginTop: 8, fontSize: 'clamp(1.2rem, 3vw, 2rem)' }}>
-              ESP, Wallhack &amp; Safety Guides – DND
+              ESP, Wallhack &amp; Safety Guides
             </span>
           </h1>
           <p style={{
@@ -188,7 +188,7 @@ export function BlogListPage() {
             margin: '0 auto',
             lineHeight: 1.7,
           }}>
-            Guides, technical breakdowns, and wipe notes for Dark and Darker ESP and account safety.
+            Guides on ESP, wallhack, safety, and loader updates.
           </p>
         </AnimatedSection>
       </div>
@@ -479,7 +479,7 @@ export function BlogPostPage() {
       <div style={{ position: 'relative', width: '100%', aspectRatio: '21/7', overflow: 'hidden', maxHeight: 480 }}>
         <img
           src={post.image}
-          alt={`${post.title} — Dark and Darker ESP wallhack gameplay screenshot`}
+          alt={`${post.title} — Sand Cheats blog cover`}
           title={post.title}
           width={1920}
           height={1080}
@@ -557,9 +557,9 @@ export function BlogPostPage() {
           lineHeight: 1.15,
           marginBottom: 24,
         }}>
-          {post.title.includes('Dark and Darker') || post.title.includes('Dark And Darker') || post.title.includes('DarkerCheats')
-            ? post.title
-            : `${post.title} | Dark And Darker Cheats`}
+          {/sand\s*cheats/i.test(post.title)
+            ? post.title.replace(/SandCheats/g, 'Sand Cheats')
+            : `${post.title} | Sand Cheats`}
         </h1>
 
         {/* Excerpt */}
@@ -602,11 +602,11 @@ export function BlogPostPage() {
             </p>
           </div>
           <Link to="/buy" className="btn-primary" style={{ flexShrink: 0 }}>
-            Buy Dark And Darker Cheats — $35/mo
+            Buy Sand Cheats — $35/mo
           </Link>
         </div>
 
-        <ClusterLinks title="More Dark And Darker guides in this cluster" maxGuides={6} />
+        <ClusterLinks title="More Sand Cheats guides in this cluster" maxGuides={6} />
       </div>
 
       {/* Related posts */}

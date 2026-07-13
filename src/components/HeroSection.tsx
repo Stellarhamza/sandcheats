@@ -114,10 +114,10 @@ export function HeroSection() {
               marginBottom: '22px',
             }}>
               <span className="gradient-text" style={{ display: 'block', fontSize: 'clamp(1.65rem, 6.2vw, 5.2rem)', lineHeight: 1.05, wordBreak: 'break-word' }}>
-                Dark And Darker Cheats
+                Sand Cheats
               </span>
               <span style={{ display: 'block', color: 'var(--text-primary)', fontSize: 'clamp(1.35rem, 3vw, 2.6rem)', lineHeight: 1.2, marginTop: '10px' }}>
-                Aimbot, ESP &amp; Wallhack – DND
+                {t('hero.subtitle')}
               </span>
             </h1>
           </div>
@@ -138,7 +138,7 @@ export function HeroSection() {
           {/* CTAs */}
           <div style={{ animation: 'fadeUp 0.7s ease both', animationDelay: '0.3s', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a
-              href="https://zadeyo.com/products/dark-and-darker-cheats"
+              href="https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://darkanddarkercheats.com/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Host: sandcheats.net
+
+Sitemap: https://sandcheats.net/sitemap-index.xml
+Sitemap: https://sandcheats.net/sitemap.xml

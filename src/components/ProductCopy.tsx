@@ -3,7 +3,7 @@ import { AnimatedSection } from './AnimatedSection';
 import { ClusterLinks } from './ClusterLinks';
 import { MEDIA, SeoImage } from '../media';
 
-const ZADEYO_STORE = 'https://zadeyo.com/products/dark-and-darker-cheats';
+const ZADEYO_STORE = 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie';
 
 const sectionPad = {
   maxWidth: 880,
@@ -49,11 +49,10 @@ function Body({ children }: { children: ReactNode }) {
 export function ProductCopy() {
   return (
     <>
-      {/* Information about the cheat */}
       <section id="about-cheat" style={{ background: 'var(--bg-void)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
         <div style={sectionPad}>
           <AnimatedSection>
-            <BlockHeading label="Product Info" title="Information about the cheat" />
+            <BlockHeading label="Product Info" title="Information about Sand Cheats" />
             <figure style={{
               margin: '0 0 24px',
               borderRadius: 'var(--radius-xl)',
@@ -65,24 +64,20 @@ export function ProductCopy() {
             </figure>
             <Body>
               <p>
-                On this page you can see the DarkerCheats ESP for Dark and Darker. We have been supporting this product
-                since the closed beta test of the game on Steam, regularly updating and supplementing it after every wipe
-                and client change.
+                Sand Cheats is our private Legit ESP and wallhack service. We keep the loader updated after every client
+                change so your overlays stay aligned with the live build.
               </p>
               <p>
-                In our cheat you will not find Rage features — here is only safe functionality for playing in the Legit style.
-                There is no aimbot. You get ESP for displaying players, mobs, items, portals, ores, traps, chests, and other
-                dungeon objects: Enemy Box ESP, Enemy Line, Enemy Distance ESP, Enemy Health ESP, Enemy Name, Skeleton ESP,
-                Item ESP, Portal ESP, Ores ESP, Traps ESP, and Chests ESP, plus Customizable ESP Colors.
+                There are no Rage features and no aimbot. You get visual ESP only: Enemy Box ESP, Enemy Line, Enemy Distance ESP,
+                Enemy Health ESP, Enemy Name, Skeleton ESP, Item ESP, Portal ESP, Ores ESP, Traps ESP, Chests ESP, and
+                Customizable ESP Colors.
               </p>
               <p>
-                The setup uses a clear menu in English and Russian. We prioritize external Legit ESP and wipe-aligned
-                updates so you can reduce risk — not eliminate it. Keep the loader current after every patch; outdated
-                builds are the usual failure mode.
+                The menu is available in English and Russian. Keep the loader current after every patch — outdated builds
+                are the usual failure mode.
               </p>
               <p>
-                DarkerCheats is an accessible external Dark and Darker ESP — wipe-ready, priced at $35/month, and
-                delivered through Zadeyo after checkout. Not affiliated with Ironmace Games.
+                External Legit ESP, priced at $35/month, delivered through Zadeyo after checkout.
               </p>
             </Body>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 28 }}>
@@ -107,51 +102,6 @@ export function ProductCopy() {
         </div>
       </section>
 
-      {/* What Is Dark and Darker */}
-      <section style={{ background: 'var(--bg-deep)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
-        <div style={sectionPad}>
-          <AnimatedSection>
-            <BlockHeading label="The Game" title="What Is Dark and Darker?" />
-            <figure style={{
-              margin: '0 0 24px',
-              borderRadius: 'var(--radius-xl)',
-              overflow: 'hidden',
-              border: '1px solid var(--border-ghost)',
-              aspectRatio: '16 / 9',
-            }}>
-              <SeoImage src={MEDIA.lootEsp.src} alt={MEDIA.lootEsp.alt} loading="lazy" />
-            </figure>
-            <Body>
-              <p>
-                Dark and Darker is a hardcore fantasy extraction dungeon crawler from Ironmace Games.
-                Players drop into dark, loot-filled dungeons as classes like Fighter, Wizard, Ranger, and more —
-                each with different combat styles, gear progression, and survival risk.
-              </p>
-              <p>
-                To survive, you must find gear, potions, and valuables while fighting monsters and other players.
-                Extract successfully and you keep what you found. Die in the dungeon and you lose what you brought in.
-                Maps are dense with traps, portals, chests, and PvPvE fights that punish bad information.
-              </p>
-              <p>
-                Dark and Darker rewards map knowledge, loot awareness, and clean extracts. If you want to play it
-                at full advantage, look at the Dark and Darker cheats available through DarkerCheats on Zadeyo —
-                ESP, loot highlights, portals, traps, and chests built for the current wipe.
-              </p>
-            </Body>
-            <a
-              href={ZADEYO_STORE}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-              style={{ marginTop: 28, display: 'inline-flex', fontSize: '0.9375rem', padding: '14px 28px' }}
-            >
-              Purchase Now
-            </a>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* FEATURES */}
       <section id="product-features" style={{ background: 'var(--bg-base)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
         <div style={sectionPad}>
           <AnimatedSection>
@@ -166,7 +116,7 @@ export function ProductCopy() {
               lineHeight: 1.05,
               marginBottom: 40,
             }}>
-              Built for every dungeon.
+              Built around ESP and wallhack.
             </h2>
           </AnimatedSection>
 
@@ -198,14 +148,12 @@ export function ProductCopy() {
               </figure>
               <Body>
                 <p>
-                  ESP / Wallhack — advanced modes that give you full vision through dungeon walls, doors, and terrain,
-                  marking other players, mobs, chests, and loot so you can act strategically before a fight starts.
-                  Every setting is built to stay readable and user-friendly, plugged into a clean menu for easy access.
+                  ESP / Wallhack modes give you full vision through walls and terrain — marking players, mobs, chests,
+                  and loot so you can act before a fight starts. Every setting stays readable inside a clean menu.
                 </p>
                 <p>
-                  This overlay has been tuned by our developers to help you climb extracts faster: spot ambushes early,
-                  path toward high-value chests, and avoid empty rooms. The cheat is updated whenever Ironmace ships
-                  a wipe or balance patch so it keeps working on the live client. We guarantee active maintenance.
+                  Our developers tune overlays for clarity: spot ambushes early, path toward high-value loot, and skip
+                  empty rooms. The service is updated whenever a new client build ships. Active maintenance is part of the subscription.
                 </p>
               </Body>
             </div>
@@ -238,14 +186,13 @@ export function ProductCopy() {
               </figure>
               <Body>
                 <p>
-                  DarkerCheats is a visual ESP suite for Dark and Darker — no aimbot. You get enemy box ESP, enemy line,
-                  distance, health, names, and skeleton overlays, plus item, portal, ore, trap, and chest ESP for full
-                  dungeon awareness. Customizable ESP colors keep every label readable in torch light or pitch black.
+                  Sand Cheats is a visual ESP suite — no aimbot. You get enemy box ESP, enemy line, distance, health, names,
+                  and skeleton overlays, plus item, portal, ore, trap, and chest ESP. Customizable ESP colors keep every
+                  label readable.
                 </p>
                 <p>
-                  Awareness is the advantage. Range-friendly overlays and per-feature toggles let you tailor the setup
-                  to your class and lobby. Our support team helps you install and dial in settings so you can start
-                  winning extracts immediately.
+                  Per-feature toggles let you tailor the setup. Our support team helps you install and dial in settings
+                  so you can start using the overlays immediately.
                 </p>
               </Body>
             </div>
@@ -253,68 +200,58 @@ export function ProductCopy() {
         </div>
       </section>
 
-      {/* Quality and Security */}
       <section style={{ background: 'var(--bg-void)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
         <div style={sectionPad}>
           <AnimatedSection>
             <BlockHeading label="Trust" title="Quality and Security" />
             <Body>
               <p>
-                Quality and security is not just a motto for us — it is the base. Private-quality external cheats.
-                Built to a higher standard than throwaway loaders. And kept undetected with continuous updates for
-                Easy Anti-Cheat and Ironmace wipe cycles.
+                Quality and security is the base. Private-quality external ESP, kept current with continuous loader updates
+                for Easy Anti-Cheat and live patches.
               </p>
               <p>
-                Thousands of players already trust Zadeyo delivery and DarkerCheats support. If you have questions
-                or problems, you always have 24/7 help at your back. Looking to contact support? Message on our Discord,
-                use the guides on your order page, or open a ticket — we work around the clock so you can play Dark and Darker
-                with far less risk and far more confidence.
+                Thousands of players already trust Zadeyo delivery and Sand Cheats support. Questions or setup issues?
+                Message on Discord, use the guides on your order page, or open a ticket — we work around the clock.
               </p>
               <p>
-                Choose DarkerCheats today. Instant delivery after checkout. Start extracting.
+                Choose Sand Cheats today. Instant delivery after checkout.
               </p>
             </Body>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Wide Range */}
       <section style={{ background: 'var(--bg-base)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
         <div style={sectionPad}>
           <AnimatedSection>
             <BlockHeading label="Coverage" title="A Wide Range of Features" />
             <Body>
               <p>
-                For Dark and Darker players searching for a suite of useful, wipe-ready cheats, looking no further than
-                DarkerCheats on Zadeyo is the right call. Enemy box ESP, enemy line, distance, health, names, skeleton ESP,
-                item ESP, portal ESP, ores ESP, traps ESP, chests ESP, and customizable ESP colors — with no aimbot.
+                Looking for wipe-ready visuals? Sand Cheats on Zadeyo covers Enemy Box ESP, Enemy Line, Distance, Health,
+                Names, Skeleton ESP, Item ESP, Portal ESP, Ores ESP, Traps ESP, Chests ESP, and customizable ESP colors —
+                with no aimbot.
               </p>
               <p>
-                Whether you want faster loot routes, safer trap avoidance, or clearer PvP reads before you commit,
-                our developers keep the visuals updated so they stay fully working on the latest Dark and Darker build.
-                Beyond the feature list, we listen to what players need after each wipe and keep support ready —
-                so you get the premium toolkit you came for, plus non-stop help when you need it.
+                Whether you want faster loot routes, safer trap avoidance, or clearer PvP reads, our developers keep the
+                overlays updated for the latest client. Support stays ready after every patch.
               </p>
             </Body>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Fast Support */}
       <section style={{ background: 'var(--bg-deep)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
         <div style={sectionPad}>
           <AnimatedSection>
             <BlockHeading label="Support" title="Fast and Reliable Support" />
             <Body>
               <p>
-                We supply not only a strong Dark and Darker ESP — we supply the support to match. Discord help
-                is open whenever something goes wrong, and your Zadeyo order page keeps loader downloads and instructions
-                in one place. Installation issue, Windows setting, or product question — we stay with you until it is solved.
+                We supply strong ESP and the support to match. Discord help is open whenever something goes wrong, and your
+                Zadeyo order page keeps loader downloads and instructions in one place.
               </p>
               <p>
-                At DarkerCheats we believe quality applies to every part of the experience, including how fast you get answers.
-                You receive an elite dungeon cheat and the support you need to make setup and play simple. Want other titles?
-                Check the rest of the Zadeyo store after you grab Dark and Darker access.
+                Installation issue, Windows setting, or product question — we stay with you until it is solved. Quality
+                applies to every part of the experience, including how fast you get answers.
               </p>
             </Body>
             <a
@@ -330,24 +267,21 @@ export function ProductCopy() {
         </div>
       </section>
 
-      {/* Easy Interface */}
       <section style={{ background: 'var(--bg-void)', padding: 'clamp(72px, 9vw, 110px) 0' }}>
         <div style={sectionPad}>
           <AnimatedSection>
             <BlockHeading label="Experience" title="Easy-to-Use Interface" />
             <Body>
               <p>
-                Much of the strength of DarkerCheats is the user experience. We keep the site and the cheat simple so
-                players with no technical background can still get in fast. Choose your plan, buy on Zadeyo, download
-                the loader from your order page, and follow the short setup guide — that is it.
+                We keep the site and the cheat simple so players with no technical background can get in fast. Choose your
+                plan, buy on Zadeyo, download the loader from your order page, and follow the short setup guide.
               </p>
               <p>
                 The in-game menu follows the same idea: clear toggles, readable ESP options, and settings that do not
-                require a tutorial to understand. We want you enjoying Dark and Darker, not fighting a complicated UI.
-                Simple setup. Simple controls. Stronger extracts.
+                require a tutorial. Simple setup. Simple controls. Stronger overlays.
               </p>
             </Body>
-            <ClusterLinks title="Next steps in the Dark And Darker cluster" maxGuides={5} />
+            <ClusterLinks title="Next steps — Sand Cheats guides" maxGuides={5} />
           </AnimatedSection>
         </div>
       </section>

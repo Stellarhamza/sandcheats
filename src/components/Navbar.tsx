@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useI18n, LANGUAGES } from '../i18n';
 
 const MOBILE_MQ = '(max-width: 920px)';
-const ZADEYO_STORE = 'https://zadeyo.com/products/dark-and-darker-cheats';
+const ZADEYO_STORE = 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie';
 
 export function Navbar() {
   const location = useLocation();
@@ -97,20 +97,21 @@ export function Navbar() {
           borderBottom: '1px solid rgba(168,85,247,0.07)',
         }}
       >
-        <Link to="/" style={{ textDecoration: 'none', flexShrink: 0, minWidth: 0 }}>
+        <Link to="/" aria-label="Sand Cheats home" style={{ textDecoration: 'none', flexShrink: 0, minWidth: 0 }}>
           <span style={{
             fontFamily: 'var(--font-display)',
             fontWeight: 900,
-            fontSize: 'clamp(1.05rem, 3.8vw, 1.45rem)',
-            letterSpacing: '0.1em',
+            fontSize: 'clamp(0.95rem, 3.2vw, 1.35rem)',
+            letterSpacing: '0.08em',
             textTransform: 'uppercase',
             lineHeight: 1,
             background: 'linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #7c3aed 100%)',
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
+            whiteSpace: 'nowrap',
           }}>
-            DARKER
+            Sand Cheats
           </span>
         </Link>
 

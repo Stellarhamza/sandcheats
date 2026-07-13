@@ -1,12 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
+import { BLOG_META } from '../data/blogMeta';
 import { SITE_URL } from './Seo';
 
 type Crumb = { name: string; path: string };
 
 const LABELS: Record<string, string> = {
   '/': 'Home',
-  '/buy': 'Buy Dark And Darker Cheats',
-  '/blog': 'Dark And Darker Cheat Blog',
+  '/buy': 'Buy Sand Cheats',
+  '/blog': 'Sand Cheats Blog',
 };
 
 export function Breadcrumbs() {
@@ -19,7 +20,11 @@ export function Breadcrumbs() {
   if (path.startsWith('/blog/')) {
     crumbs.push({ name: LABELS['/blog'], path: '/blog' });
     const slug = path.replace('/blog/', '');
-    crumbs.push({ name: slug.replace(/-/g, ' '), path });
+    const post = BLOG_META.find((entry) => entry.slug === slug);
+    const title = post
+      ? post.title.replace(/SandCheats/g, 'Sand Cheats')
+      : slug.replace(/-/g, ' ');
+    crumbs.push({ name: title, path });
   } else if (LABELS[path]) {
     crumbs.push({ name: LABELS[path], path });
   } else {
@@ -39,7 +44,7 @@ export function Breadcrumbs() {
 
   return (
     <nav
-      aria-label="Breadcrumb"
+      aria-label="Sand Cheats breadcrumb"
       style={{
         maxWidth: 1280,
         margin: '0 auto',
@@ -64,7 +69,7 @@ export function Breadcrumbs() {
             <li key={c.path} style={{ display: 'inline-flex', alignItems: 'center', gap: 10 }}>
               {i > 0 && <span aria-hidden style={{ opacity: 0.5 }}>/</span>}
               {last ? (
-                <span style={{ color: 'var(--text-secondary)', textTransform: 'capitalize' }}>{c.name}</span>
+                <span style={{ color: 'var(--text-secondary)' }}>{c.name}</span>
               ) : (
                 <Link to={c.path} style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>
                   {c.name}

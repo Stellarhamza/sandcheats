@@ -1,5 +1,5 @@
 {
-  "name": "dark-and-darker-cheats",
+  "name": "sand-cheats",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,7 @@
     "predeploy": "npm run build",
     "deploy": "wrangler deploy",
     "pages:build": "npm run build",
-    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=darkanddarker"
+    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=sandcheats"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",

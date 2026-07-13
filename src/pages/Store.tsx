@@ -4,7 +4,7 @@ import { AnimatedSection } from '../components/AnimatedSection';
 import { ClusterLinks } from '../components/ClusterLinks';
 import { SHOWCASE_IMAGES, SeoImage } from '../media';
 
-const ZADEYO = 'https://zadeyo.com/products/dark-and-darker-cheats';
+const ZADEYO = 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie';
 const DISCORD = 'https://discord.gg/zadeyo';
 
 const checklist = [
@@ -24,8 +24,8 @@ const checklist = [
 
 const faqs: { q: string; a: string }[] = [
   {
-    q: 'Does this Dark And Darker cheat include aimbot?',
-    a: 'No. DarkerCheats for Dark and Darker is Legit-style ESP and wallhack only — enemy, item, portal, ore, trap, and chest visuals. There is no Rage mode and no aimbot in the live product.',
+    q: 'Does this Sand Cheats include aimbot?',
+    a: 'No. Sand Cheats is Legit-style ESP and wallhack only — enemy, item, portal, ore, trap, and chest visuals. There is no Rage mode and no aimbot in the live product.',
   },
   {
     q: 'Can I use my license on more than one PC?',
@@ -37,15 +37,15 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'Will it hurt FPS?',
-    a: 'It is an external overlay process. Most users report no meaningful FPS drop compared with playing without the tool.',
+    a: 'It is an external overlay process. Most users report no meaningful FPS drop compared with playing without the cheat.',
   },
   {
-    q: 'What happens after a Dark and Darker wipe or patch?',
-    a: 'Open your Zadeyo order page and download the newest loader. Updates are published after Ironmace ships a new build. Running an outdated loader increases risk — keep it current.',
+    q: 'What happens after a wipe or patch?',
+    a: 'Open your Zadeyo order page and download the newest loader. Updates are published after ships a new build. Running an outdated loader increases risk — keep it current.',
   },
   {
     q: 'Is this guaranteed undetected or ban-proof?',
-    a: 'No honest provider can guarantee zero bans. We focus on external Legit ESP, wipe-aligned updates, and clear support. Risk still exists from reports, outdated loaders, and account behavior. Not affiliated with Ironmace Games.',
+    a: 'No honest provider can guarantee zero bans. We focus on external Legit ESP, wipe-aligned updates, and clear support. Risk still exists from reports, outdated loaders, and account behavior. Keep the loader updated after each patch.',
   },
   {
     q: 'What payment methods and delivery do you use?',
@@ -156,7 +156,7 @@ export function StorePage() {
         <div className="grid-overlay" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} aria-hidden="true" />
 
         <div style={{ position: 'relative', zIndex: 1, maxWidth: 800, margin: '0 auto' }}>
-          <p className="section-label" style={{ justifyContent: 'center', marginBottom: '18px' }}>Private Dark And Darker Cheats</p>
+          <p className="section-label" style={{ justifyContent: 'center', marginBottom: '18px' }}>Private Sand Cheats</p>
           <h1 style={{
             fontFamily: 'var(--font-display)',
             fontWeight: 900,
@@ -167,8 +167,8 @@ export function StorePage() {
             color: 'var(--text-primary)',
             marginBottom: '16px',
           }}>
-            <span className="gradient-text">Buy Dark And Darker Cheats</span>
-            <br />Aimbot, ESP &amp; Wallhack – DND
+            <span className="gradient-text">Buy Sand Cheats</span>
+            <br />ESP &amp; Wallhack
           </h1>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -177,8 +177,7 @@ export function StorePage() {
             marginBottom: '28px',
             lineHeight: 1.6,
           }}>
-            For dungeon extract players who want clear enemy, loot, and hazard visuals on Ironmace&apos;s Dark and Darker —
-            Legit ESP only, wipe-aligned loader updates, English &amp; Russian menu.
+            Private Sand Cheats for clear enemy, loot, and ESP visuals — Legit ESP focus, patch-aligned loader updates, English &amp; Russian menu.
           </p>
 
           {/* 2. Proof */}
@@ -438,7 +437,7 @@ export function StorePage() {
                       color: 'var(--text-secondary)',
                       lineHeight: 1.65,
                     }}>
-                      <strong style={{ color: 'var(--text-primary)' }}>Trust &amp; risk:</strong> Not affiliated with Ironmace Games.
+                      <strong style={{ color: 'var(--text-primary)' }}>Trust &amp; risk:</strong> Keep the loader updated after each patch.
                       No “100% safe” guarantee. Keep the loader updated after every wipe, avoid obvious report bait,
                       and use optional HWID spoofing only if you understand the trade-offs. Privacy and payment terms are on Zadeyo at checkout.
                     </p>
@@ -485,11 +484,11 @@ export function StorePage() {
             maxGuides={7}
           />
           <p style={{ marginTop: 16, fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
-            <Link to="/" style={{ color: 'var(--accent-bright)' }}>Dark And Darker Cheats home</Link>
+            <Link to="/" style={{ color: 'var(--accent-bright)' }}>Sand Cheats home</Link>
             {' · '}
-            <Link to="/blog" style={{ color: 'var(--accent-bright)' }}>Full Dark And Darker cheat blog</Link>
+            <Link to="/blog" style={{ color: 'var(--accent-bright)' }}>Full Sand Cheats blog</Link>
             {' · '}
-            <Link to="/#about-cheat" style={{ color: 'var(--accent-bright)' }}>Product information about DarkerCheats</Link>
+            <Link to="/#about-cheat" style={{ color: 'var(--accent-bright)' }}>Product information about Sand Cheats</Link>
           </p>
         </div>
       </section>

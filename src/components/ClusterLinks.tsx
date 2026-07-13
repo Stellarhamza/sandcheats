@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { DND_CLUSTER } from '../seo/cluster';
+import { SAND_CLUSTER } from '../seo/cluster';
 
 type Props = {
   title?: string;
@@ -9,11 +9,11 @@ type Props = {
 
 /** Contextual internal links — descriptive anchors, not “click here” */
 export function ClusterLinks({
-  title = 'Related Dark And Darker resources',
+  title = 'Related Sand Cheats resources',
   includeHub = true,
   maxGuides = 6,
 }: Props) {
-  const guides = DND_CLUSTER.guides.slice(0, maxGuides);
+  const guides = SAND_CLUSTER.guides.slice(0, maxGuides);
 
   return (
     <aside
@@ -41,7 +41,7 @@ export function ClusterLinks({
         {includeHub && (
           <li>
             <Link
-              to={DND_CLUSTER.hub.to}
+              to={SAND_CLUSTER.hub.to}
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.9rem',
@@ -51,7 +51,7 @@ export function ClusterLinks({
                 textUnderlineOffset: 3,
               }}
             >
-              {DND_CLUSTER.hub.label}
+              {SAND_CLUSTER.hub.label}
             </Link>
           </li>
         )}

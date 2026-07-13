@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sandcheats.net/</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/sand-cheats-hero-og.jpg</image:loc>
+      <image:title>Sand Cheats hero — SAND Raiders of Sophie dunes</image:title>
+      <image:caption>Sand Cheats homepage hero for SAND Raiders of Sophie ESP and wallhack</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/sand-cheats-player-esp-og.jpg</image:loc>
+      <image:title>Sand Cheats ESP wallhack</image:title>
+      <image:caption>Player ESP and wallhack coverage for sand cheats</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/sand-cheats-loot-esp-og.jpg</image:loc>
+      <image:title>Sand Cheats loot ESP</image:title>
+      <image:caption>Loot ESP and through-wall loot awareness for Sand Cheats</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/sand-cheats-trampler-showcase-og.jpg</image:loc>
+      <image:title>Sand Cheats trampler showcase</image:title>
+      <image:caption>Trampler desert showcase for Sand Cheats ESP visuals</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/sand-cheats-social-preview.jpg</image:loc>
+      <image:title>Sand Cheats social preview</image:title>
+      <image:caption>Sand Cheats Open Graph and social sharing image</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/logo.png</image:loc>
+      <image:title>Sand Cheats logo</image:title>
+      <image:caption>Sand Cheats brand logo for Google Search favicon and knowledge panel</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-esp-guide.jpg</image:loc>
+      <image:title>Sand Cheats ESP Guide: See Every Enemy Through Walls</image:title>
+      <image:caption>A deep-dive into how ESP works in Sand Cheats — which overlays matter most, and how to configure wallhack visibility for clearer reads.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-hwid-spoofer.jpg</image:loc>
+      <image:title>Sand Cheats HWID Spoofer: Hardware Bans and Clean Profiles</image:title>
+      <image:caption>Hardware ID bans are the nuclear option anti-cheat uses. Here is how HWID spoofing works, what IDs get flagged, and how to keep hardware clean.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-aimbot-guide.jpg</image:loc>
+      <image:title>Sand Cheats Aim Assist: Bone Selector, FOV &amp; Smoothing</image:title>
+      <image:caption>Configure aim settings that look human — bone target, smoothing curves, FOV radius, and visibility checks for controlled results.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-ban-waves.jpg</image:loc>
+      <image:title>Sand Cheats Ban Waves: How Detection Works and How to Stay Safer</image:title>
+      <image:caption>Anti-cheat systems pair Easy Anti-Cheat with server-side telemetry. Here is how ban waves work and how to minimise exposure.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-loot-esp.jpg</image:loc>
+      <image:title>Sand Cheats Loot ESP: Never Miss High-Value Items Again</image:title>
+      <image:caption>Loot ESP maps items in real time — configure tier filters to find the best gear fast and leave before enemies rotate.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-anticheat.jpg</image:loc>
+      <image:title>Sand Cheats Anti-Cheat Deep Dive: Detection and Weaknesses</image:title>
+      <image:caption>A technical breakdown of anti-cheat architecture — kernel drivers, memory scanning, behavioural detection, and where external ESP sits.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-beginners.jpg</image:loc>
+      <image:title>Sand Cheats Beginner&apos;s Guide: ESP Setup and First Steps</image:title>
+      <image:caption>New to Sand Cheats? This guide covers checkout, loader setup, ESP toggles, and the first steps after purchase.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-external-cheat.jpg</image:loc>
+      <image:title>How Sand Cheats External Overlays Work: Memory Reading</image:title>
+      <image:caption>A technical walkthrough of external cheat architecture — memory reading, overlay rendering, and process isolation.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-recoil-control.jpg</image:loc>
+      <image:title>Sand Cheats Recoil Control: Scripts and Weapon Profiles</image:title>
+      <image:caption>How the recoil control module works, how to configure weapon profiles, and what percentage looks natural.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-makima.jpg</image:loc>
+      <image:title>Makima.rip vs Sand Cheats: Honest Feature &amp; Safety Comparison</image:title>
+      <image:caption>We break down Makima feature set, detection record, update speed, and pricing against Sand Cheats.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-zadeyo.jpg</image:loc>
+      <image:title>Zadeyo.com vs Sand Cheats: Which Option Is Worth Your Money?</image:title>
+      <image:caption>We compare aimbot, ESP, pricing, detection record, and update infrastructure against Sand Cheats in full detail.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-cheats-comparison.jpg</image:loc>
+      <image:title>Novaxware vs Sand Cheats: Provider Deep Dive</image:title>
+      <image:caption>We put Novaxware features, update track record, pricing, and safety record under the microscope against Sand Cheats.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-player-esp.jpg</image:loc>
+      <image:title>SternClient vs Sand Cheats: Full Comparison 2026</image:title>
+      <image:caption>Feature roster, safety record, patch update speed, and how SternClient stacks up against Sand Cheats feature-for-feature.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-guide.jpg</image:loc>
+      <image:title>Best Sand Cheats 2026: Top Providers Ranked and Compared</image:title>
+      <image:caption>A 2026 ranking of major providers — Makima.rip, Zadeyo, Novaxware, SternClient, and Sand Cheats — on features, safety, updates, and value.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sandcheats.net/blog</loc>
+    <image:image>
+      <image:loc>https://sandcheats.net/blog-sand-patch-updates.jpg</image:loc>
+      <image:title>Sand Cheats Patch Updates: Stay Safe After Every Wipe</image:title>
+      <image:caption>Patches are the #1 cause of loader failures. Here is the exact workflow to stay safe every time a new build ships.</image:caption>
+    </image:image>
+  </url>
+</urlset>

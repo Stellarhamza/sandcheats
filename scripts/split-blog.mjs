@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const src = fs.readFileSync('d:/downloads/dark and darker/src/pages/Blog.tsx', 'utf8');
+const src = fs.readFileSync('d:/downloads/sand raiders of sophie/src/pages/Blog.tsx', 'utf8');
 const posts = [];
 const re =
   /\{\s*slug:\s*'([^']+)',\s*title:\s*'((?:\\'|[^'])*)',\s*category:\s*'([^']+)',\s*date:\s*'([^']+)',\s*readTime:\s*'([^']+)',\s*image:\s*'([^']+)',\s*excerpt:\s*\n?\s*'((?:\\'|[^'])*)',\s*body:\s*`([\s\S]*?)`\s*,?\s*\}/g;
@@ -20,12 +20,12 @@ while ((m = re.exec(src))) {
 console.log('matched', posts.length);
 if (posts.length < 10) process.exit(1);
 
-fs.mkdirSync('d:/downloads/dark and darker/src/data', { recursive: true });
+fs.mkdirSync('d:/downloads/sand raiders of sophie/src/data', { recursive: true });
 const meta = posts.map(({ body, ...rest }) => rest);
 const bodies = Object.fromEntries(posts.map((p) => [p.slug, p.body]));
 
 fs.writeFileSync(
-  'd:/downloads/dark and darker/src/data/blogMeta.ts',
+  'd:/downloads/sand raiders of sophie/src/data/blogMeta.ts',
   `export type BlogMeta = {
   slug: string;
   title: string;
@@ -41,7 +41,7 @@ export const BLOG_META: BlogMeta[] = ${JSON.stringify(meta, null, 2)};
 );
 
 fs.writeFileSync(
-  'd:/downloads/dark and darker/src/data/blogBodies.ts',
+  'd:/downloads/sand raiders of sophie/src/data/blogBodies.ts',
   `export const BLOG_BODIES: Record<string, string> = ${JSON.stringify(bodies, null, 2)};
 `
 );

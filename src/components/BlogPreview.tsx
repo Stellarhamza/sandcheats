@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { AnimatedSection } from './AnimatedSection';
 import { BLOG_META } from '../data/blogMeta';
 
-const SITE = 'https://darkanddarkercheats.com';
+const SITE = 'https://sandcheats.net';
 
 /** Homepage blog teaser — real anchors + visible copy for Googlebot */
 export function BlogPreview() {
@@ -25,7 +25,7 @@ export function BlogPreview() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'ItemList',
-            name: 'Dark and Darker Cheat Blog',
+            name: 'Sand Cheats Blog',
             itemListElement: BLOG_META.map((post, i) => ({
               '@type': 'ListItem',
               position: i + 1,
@@ -66,7 +66,7 @@ export function BlogPreview() {
                   margin: 0,
                 }}
               >
-                Dark and Darker{' '}
+                Sand Cheats{' '}
                 <span className="gradient-text">Guides &amp; Tips</span>
               </h2>
               <p style={{
@@ -83,7 +83,7 @@ export function BlogPreview() {
               </p>
             </div>
             <Link to="/blog" className="btn-ghost" style={{ fontSize: '0.875rem', padding: '12px 22px' }}>
-              Read the Dark And Darker cheat blog →
+              Read the Sand Cheats blog →
             </Link>
           </div>
         </AnimatedSection>
@@ -108,7 +108,7 @@ export function BlogPreview() {
                 }}>
                   <img
                     src={post.image}
-                    alt={`${post.title} — Dark and Darker official gameplay screenshot`}
+                    alt={`${post.title} — Sand Cheats blog cover`}
                     title={post.title}
                     width={1920}
                     height={1080}
@@ -149,7 +149,7 @@ export function BlogPreview() {
         </div>
 
         {/* Extra crawlable plain link list (always in HTML for bots) */}
-        <nav aria-label="All Dark and Darker blog posts" style={{ marginTop: 36 }}>
+        <nav aria-label="All Sand Cheats blog posts" style={{ marginTop: 36 }}>
           <ul style={{
             listStyle: 'none',
             padding: 0,

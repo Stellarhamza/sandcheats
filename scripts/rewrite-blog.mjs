@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const path = 'd:/downloads/dark and darker/src/pages/Blog.tsx';
+const path = 'd:/downloads/sand raiders of sophie/src/pages/Blog.tsx';
 let src = fs.readFileSync(path, 'utf8');
 const start = src.indexOf('export const BLOG_POSTS = [');
 const end = src.indexOf('\n];\n', start);

@@ -6,15 +6,27 @@ import { Breadcrumbs } from './components/Breadcrumbs';
 import { HomePage } from './pages/Home';
 import { BLOG_META } from './data/blogMeta';
 import { I18nProvider } from './i18n';
-import { DEFAULT_OG_IMAGE, SITE_URL, Seo } from './components/Seo';
+import { SITE_URL, Seo } from './components/Seo';
 import './globals.css';
 
 const StorePage = lazy(() => import('./pages/Store').then((m) => ({ default: m.StorePage })));
 const BlogListPage = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogListPage })));
 const BlogPostPage = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogPostPage })));
 
-const HOME_TITLE = 'Dark And Darker Cheats | Aimbot, ESP & Wallhack - DND';
-const HOME_DESCRIPTION = 'Buy Dark And Darker Cheats with ESP & wallhack for DND. Private Legit overlays and wipe updates on Steam.';
+const HOME_TITLE = 'Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack';
+const HOME_DESCRIPTION = 'Buy sand cheats and SAND Raiders of Sophie cheats — private Legit ESP, wallhack, and loot overlays with patch updates and Discord support.';
+
+const HOME_IMAGES = [
+  `${SITE_URL}/sand-cheats-hero-og.jpg`,
+  `${SITE_URL}/sand-cheats-player-esp-og.jpg`,
+  `${SITE_URL}/sand-cheats-loot-esp-og.jpg`,
+  `${SITE_URL}/sand-cheats-trampler-showcase-og.jpg`,
+  `${SITE_URL}/sand-cheats-social-preview.jpg`,
+] as const;
+
+const HOME_OG_IMAGE = `${SITE_URL}/sand-cheats-hero-og.jpg`;
+const BLOG_OG_IMAGE = `${SITE_URL}/sand-cheats-social-preview.jpg`;
+const BUY_OG_IMAGE = `${SITE_URL}/sand-cheats-player-esp-og.jpg`;
 
 function toIsoDate(date: string) {
   const parsed = new Date(date);
@@ -28,16 +40,26 @@ function RouteSeo() {
   if (currentPath === '/blog') {
     return (
       <Seo
-        title="Dark And Darker Cheat Blog | ESP, Wallhack & Safety Guides - DND"
-        description="Dark And Darker Cheats blog: ESP, wallhack, and DND safety guides for private Legit overlays."
+        title="Sand Cheats Blog | SAND Raiders of Sophie Cheats Guides"
+        description="Sand cheats and SAND Raiders of Sophie cheats blog — ESP, wallhack, and safety guides for private Legit overlays."
         path="/blog"
+        image={BLOG_OG_IMAGE}
+        imageAlt="Sand Cheats blog — SAND Raiders of Sophie cheats guides"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'Dark And Darker Cheat Blog | ESP, Wallhack & Safety Guides - DND',
-          description: 'Guides and comparisons for Dark and Darker ESP, safety, and wipe updates.',
+          name: 'Sand Cheats Blog | SAND Raiders of Sophie Cheats Guides',
+          description: 'Guides and comparisons for sand cheats, SAND Raiders of Sophie cheats ESP, safety, and patch updates.',
           url: `${SITE_URL}/blog`,
-          isPartOf: { '@type': 'WebSite', name: 'Dark And Darker Cheats', url: SITE_URL },
+          image: BLOG_OG_IMAGE,
+          primaryImageOfPage: {
+            '@type': 'ImageObject',
+            url: BLOG_OG_IMAGE,
+            contentUrl: BLOG_OG_IMAGE,
+            width: 1200,
+            height: 630,
+          },
+          isPartOf: { '@type': 'WebSite', name: 'Sand Cheats', url: SITE_URL },
           mainEntity: {
             '@type': 'ItemList',
             numberOfItems: BLOG_META.length,
@@ -61,37 +83,46 @@ function RouteSeo() {
     if (post) {
       const canonicalPath = `/blog/${post.slug}`;
       const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+      const postImage = `${SITE_URL}${post.image}`;
 
       return (
         <Seo
-          title={`${post.title} | Dark And Darker Cheats - DND`}
+          title={`${post.title} | Sand Cheats`}
           description={post.excerpt}
           path={canonicalPath}
-          image={`${SITE_URL}${post.image}`}
+          image={postImage}
+          imageAlt={post.title}
           type="article"
           structuredData={{
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
             headline: post.title,
             description: post.excerpt,
-            image: `${SITE_URL}${post.image}`,
+            image: [postImage],
             datePublished: toIsoDate(post.date),
             dateModified: toIsoDate(post.date),
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': canonicalUrl,
+              primaryImageOfPage: {
+                '@type': 'ImageObject',
+                url: postImage,
+                contentUrl: postImage,
+              },
             },
             author: {
               '@type': 'Organization',
-              name: 'DarkerCheats',
+              name: 'Sand Cheats',
               url: SITE_URL,
             },
             publisher: {
               '@type': 'Organization',
-              name: 'Dark And Darker Cheats',
+              name: 'Sand Cheats',
               logo: {
                 '@type': 'ImageObject',
-                url: DEFAULT_OG_IMAGE,
+                url: `${SITE_URL}/logo.png`,
+                width: 512,
+                height: 512,
               },
             },
           }}
@@ -103,34 +134,58 @@ function RouteSeo() {
   if (currentPath === '/buy') {
     return (
       <Seo
-        title="Buy Dark And Darker Cheats | Aimbot, ESP & Wallhack - DND"
-        description="Buy Dark And Darker Cheats with ESP & wallhack for DND. Private Legit overlays and wipe updates on Steam."
+        title="Buy Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack"
+        description="Buy sand cheats and SAND Raiders of Sophie cheats — ESP, wallhack, and loot overlays. Private Legit Sand Cheats with patch updates on Steam."
         path="/buy"
+        image={BUY_OG_IMAGE}
+        imageAlt="Buy Sand Cheats — ESP and wallhack preview"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'Product',
-          name: 'Dark And Darker Cheats | Aimbot, ESP & Wallhack - DND',
+          name: 'Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack',
           description:
-            'Private Dark And Darker ESP and wallhack with enemy, item, portal, ore, trap, and chest visuals. Legit-style overlay, wipe updates, English and Russian menu. Delivered via Zadeyo.',
-          image: [
-            `${SITE_URL}/dark-and-darker-player-esp-skeleton-wallhack.png`,
-            `${SITE_URL}/dark-and-darker-loot-esp-chest-wallhack.png`,
-            `${SITE_URL}/dark-and-darker-esp-mob-trap-wallhack.png`,
-          ],
-          brand: { '@type': 'Brand', name: 'DarkerCheats' },
+            'Private sand cheats and SAND Raiders of Sophie cheats — ESP, wallhack, player, NPC, loot, and extract visuals. Legit-style overlay, patch updates, English and Russian menu. Delivered via Zadeyo.',
+          image: [...HOME_IMAGES],
+          brand: { '@type': 'Brand', name: 'Sand Cheats' },
           offers: {
             '@type': 'Offer',
-            url: 'https://zadeyo.com/products/dark-and-darker-cheats',
+            url: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie',
             priceCurrency: 'USD',
             price: '35',
+            priceValidUntil: '2027-12-31',
             availability: 'https://schema.org/InStock',
+            itemCondition: 'https://schema.org/NewCondition',
           },
         }}
       />
     );
   }
 
-  return <Seo title={HOME_TITLE} description={HOME_DESCRIPTION} path="/" />;
+  return (
+    <Seo
+      title={HOME_TITLE}
+      description={HOME_DESCRIPTION}
+      path="/"
+      image={HOME_OG_IMAGE}
+      imageAlt="Sand Cheats — SAND Raiders of Sophie ESP and wallhack"
+      structuredData={{
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: HOME_TITLE,
+        description: HOME_DESCRIPTION,
+        url: `${SITE_URL}/`,
+        image: [...HOME_IMAGES],
+        primaryImageOfPage: {
+          '@type': 'ImageObject',
+          url: HOME_OG_IMAGE,
+          contentUrl: HOME_OG_IMAGE,
+          width: 1280,
+          height: 720,
+        },
+        isPartOf: { '@type': 'WebSite', name: 'Sand Cheats', url: SITE_URL },
+      }}
+    />
+  );
 }
 
 function RouteFallback() {

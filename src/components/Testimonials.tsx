@@ -37,15 +37,15 @@ function PixelAvatar({ seed, size = 52 }: { seed: number; size?: number }) {
 }
 
 const reviews = [
-  { name: 'Sway', quote: 'Support solved my Dark and Darker loader issue quick and easy. Fast response times every time — never had a hard time getting things fixed.', date: 'May 8, 2026' },
-  { name: 'Joey Scalia', quote: 'Answered fast. Most reliable for answers and info on Dark and Darker setup. Great experience overall.', date: 'May 8, 2026' },
-  { name: 'Ash', quote: 'Had trouble with first launch so I opened a ticket. Support walked me through it and had it sorted in under five minutes. Cheat runs great in Dark and Darker.', date: 'May 8, 2026' },
+  { name: 'Sway', quote: 'Support solved my Sand Cheats loader issue quick and easy. Fast response times every time — never had a hard time getting things fixed.', date: 'May 8, 2026' },
+  { name: 'Joey Scalia', quote: 'Answered fast. Most reliable for answers and info on Sand Cheats setup. Great experience overall.', date: 'May 8, 2026' },
+  { name: 'Ash', quote: 'Had trouble with first launch so I opened a ticket. Support walked me through it and had it sorted in under five minutes. Cheat runs great in Sand Cheats.', date: 'May 8, 2026' },
   { name: 'Adian Hipsz', quote: 'Fast to respond with solid solutions. They answered every question in detail and did not rush me off the line.', date: 'May 8, 2026' },
   { name: 'Tony WoW', quote: 'Patch dropped and something broke on my side — team pointed me to the right build and it was working again same day. Thanks.', date: 'May 8, 2026' },
-  { name: 'taj taj', quote: 'Support and the dev updates are the real deal. Dark and Darker cheat has been stable for me for weeks.', date: 'May 7, 2026' },
-  { name: 'Alex Moreno', quote: 'Best support I have used for a game tool. They fixed my HWID question fast and explained what to do next time.', date: 'May 7, 2026' },
+  { name: 'taj taj', quote: 'Support and the dev updates are the real deal. Sand Cheats has been stable for me for weeks.', date: 'May 7, 2026' },
+  { name: 'Alex Moreno', quote: 'Best support I have used for a game cheat. They fixed my HWID question fast and explained what to do next time.', date: 'May 7, 2026' },
   { name: 'Fuzzy JD', quote: 'Very willing to help. Someone stayed with me for well over an hour until Easy Anti-Cheat and my overlay setup were sorted. Really appreciated.', date: 'May 7, 2026' },
-  { name: 'CQB_Gamer', quote: 'Very good support — they took their time and stayed until my Dark and Darker issue was fully solved. Would use again.', date: 'May 7, 2026' },
+  { name: 'CQB_Gamer', quote: 'Very good support — they took their time and stayed until my Sand Cheats issue was fully solved. Would use again.', date: 'May 7, 2026' },
 ];
 
 function StarRating() {
@@ -128,7 +128,7 @@ function ReviewsIntro() {
         maxWidth: 420,
         marginBottom: 28,
       }}>
-        Trusted by thousands of Dark and Darker players worldwide. Real reviews from real players, unfiltered.
+        Trusted by thousands of Sand Cheats players worldwide. Real reviews from real players, unfiltered.
       </p>
       <div style={{
         display: 'grid',
@@ -162,7 +162,7 @@ function ReviewsIntro() {
       </div>
       <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
         <a
-          href="https://zadeyo.com/products/dark-and-darker-cheats"
+          href="https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie"
           target="_blank" rel="noopener noreferrer"
           className="btn-primary"
           style={{ padding: '14px 28px', fontSize: '0.875rem', width: '100%', maxWidth: 320 }}

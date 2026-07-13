@@ -46,7 +46,7 @@ const enemyVisuals: { name: string; desc: string; icon: ReactNode }[] = [
   },
   {
     name: 'Enemy Name',
-    desc: 'Show enemy names on the overlay for clear identification in crowded dungeon fights.',
+    desc: 'Show enemy names on the overlay for clear identification in crowded fights.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
         <rect x="3" y="7" width="20" height="12" rx="2"/>
@@ -72,7 +72,7 @@ const worldVisuals: { name: string; desc: string }[] = [
   { name: 'Item ESP', desc: 'Highlight gear and valuables through walls so you never miss high-value loot.' },
   { name: 'Portal ESP', desc: 'Mark portals and extract routes so you always know your way out.' },
   { name: 'Ores ESP', desc: 'Reveal ore nodes for faster farming and crafting material runs.' },
-  { name: 'Traps ESP', desc: 'Expose floor spikes and traps before they end your dungeon run.' },
+  { name: 'Traps ESP', desc: 'Expose floor spikes and traps before they end your raid.' },
   { name: 'Chests ESP', desc: 'See chests through walls and path straight to the best containers.' },
 ];
 
@@ -227,9 +227,9 @@ export function FeaturesGrid() {
                 lineHeight: 1.05,
                 marginBottom: 16,
               }}>
-                Dark and Darker ESP{' '}
+                Sand Cheats ESP{' '}
                 <span className="gradient-text">Total Awareness</span>{' '}
-                in Every Dungeon
+                With Every Overlay
               </h2>
               <p style={{
                 fontFamily: 'var(--font-body)',
@@ -240,7 +240,7 @@ export function FeaturesGrid() {
                 marginBottom: 12,
               }}>
                 Pure visual ESP — no aimbot. Toggle enemy boxes, skeleton, health, names, and distance, then layer item,
-                portal, ore, trap, and chest ESP when you need the full dungeon read.
+                portal, ore, trap, and chest ESP when you need the full desert read.
               </p>
               <p style={{
                 fontFamily: 'var(--font-body)',
@@ -356,7 +356,7 @@ export function FeaturesGrid() {
                 maxWidth: 680,
                 marginBottom: 24,
               }}>
-                Dark and Darker is about looting the dungeon and extracting alive. See every container, trap, ore node, and portal before you commit.
+                Sand Cheats is about clear ESP intel. See every container, threat, and route before you commit.
               </p>
               <div
                 className="features-split-grid"
