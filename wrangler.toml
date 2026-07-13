@@ -1,0 +1,16 @@
+# Cloudflare Workers static assets (Vite SPA)
+# Worker name must match Cloudflare project: darkanddarker
+
+name = "darkanddarker"
+main = "worker/index.js"
+compatibility_date = "2026-07-12"
+workers_dev = true
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = true
