@@ -1,4 +1,0 @@
-# Relative redirects only (Cloudflare Workers rejects absolute URL rules).
-# www / http → https apex is handled in worker/index.js
-
-/index.html / 301

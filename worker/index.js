@@ -91,6 +91,13 @@ export default {
       return redirect(dest.toString());
     }
 
+    // /index.html → /
+    if (url.pathname === '/index.html') {
+      const dest = new URL(url.toString());
+      dest.pathname = '/';
+      return redirect(dest.toString());
+    }
+
     const assetResponse = await env.ASSETS.fetch(request);
     return withSecurityHeaders(assetResponse, url);
   },
