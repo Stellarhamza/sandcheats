@@ -19,7 +19,19 @@ function ClickToPlayVideo({ src, label }: { src: string; label: string }) {
   function handlePlayClick() {
     const video = videoRef.current;
     if (!video) return;
-    void video.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+
+    const play = () => {
+      void video.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+    };
+
+    if (!video.getAttribute('src')) {
+      video.src = src;
+      video.addEventListener('loadeddata', play, { once: true });
+      video.load();
+      return;
+    }
+
+    play();
   }
 
   return (
@@ -36,8 +48,7 @@ function ClickToPlayVideo({ src, label }: { src: string; label: string }) {
     }}>
       <video
         ref={videoRef}
-        src={src}
-        preload="metadata"
+        preload="none"
         playsInline
         controls={playing}
         onPause={() => setPlaying(false)}

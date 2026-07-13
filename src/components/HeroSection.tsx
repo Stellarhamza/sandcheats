@@ -25,12 +25,13 @@ export function HeroSection() {
       }}>
         <SeoImage
           src={MEDIA.heroLcp.src}
+          srcSet={MEDIA.heroLcp.srcSet}
           fallback={MEDIA.heroLcp.fallback}
           alt={MEDIA.heroLcp.alt}
           loading="eager"
           fetchPriority="high"
-          width={1400}
-          height={788}
+          width={1280}
+          height={720}
           sizes="100vw"
           style={{
             position: 'absolute',
@@ -59,8 +60,8 @@ export function HeroSection() {
         opacity: 0.6,
       }} aria-hidden="true" />
 
-      {/* Orb behind text on left */}
-      <div style={{
+      {/* Orb behind text on left — desktop only (mobile paint cost) */}
+      <div className="hero-orb" style={{
         position: 'absolute', zIndex: 2,
         width: 600, height: 600, borderRadius: '50%',
         background: 'radial-gradient(circle, rgba(124,58,237,0.22) 0%, transparent 70%)',

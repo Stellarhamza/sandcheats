@@ -1,5 +1,3 @@
-@import 'tailwindcss';
-
 /* ── Design Tokens — Pure Purple ─────────────────────────────────────── */
 :root {
   --font-display: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
@@ -275,12 +273,30 @@ body::-webkit-scrollbar {
 
 @media (max-width: 768px) {
   .glass-card {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .grid-overlay {
-    opacity: 0.35;
+    display: none;
+  }
+
+  .hero-orb {
+    display: none !important;
+  }
+
+  .feature-card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

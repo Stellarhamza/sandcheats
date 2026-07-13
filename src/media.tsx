@@ -20,6 +20,8 @@ export const MEDIA = {
   },
   heroLcp: {
     src: '/hero-sand-cheats-player-esp-lcp.webp',
+    srcSet:
+      '/hero-sand-cheats-player-esp-lcp-720.webp 720w, /hero-sand-cheats-player-esp-lcp-960.webp 960w, /hero-sand-cheats-player-esp-lcp.webp 1280w',
     fallback: '/sand-cheats-hero-og.jpg',
     alt: 'Sand Cheats — dune rumble screenshot for SAND Raiders of Sophie ESP and wallhack cheats',
   },
@@ -49,6 +51,7 @@ type SeoImageProps = {
   src: string;
   alt: string;
   fallback?: string;
+  srcSet?: string;
   style?: CSSProperties;
   className?: string;
   loading?: 'lazy' | 'eager';
@@ -62,6 +65,7 @@ export function SeoImage({
   src,
   alt,
   fallback,
+  srcSet,
   style,
   className,
   loading = 'lazy',
@@ -77,7 +81,7 @@ export function SeoImage({
     height,
     sizes,
     loading,
-    decoding: (loading === 'eager' ? 'sync' : 'async') as 'sync' | 'async',
+    decoding: 'async' as const,
     className,
     style: {
       width: '100%',
@@ -92,11 +96,11 @@ export function SeoImage({
   if (src.endsWith('.webp')) {
     return (
       <picture style={{ display: 'contents' }}>
-        <source srcSet={src} type="image/webp" sizes={sizes} />
+        <source srcSet={srcSet ?? src} type="image/webp" sizes={sizes} />
         <img src={fallback ?? src.replace(/\.webp$/, '.png')} {...shared} />
       </picture>
     );
   }
 
-  return <img src={src} {...shared} />;
+  return <img src={src} srcSet={srcSet} {...shared} />;
 }

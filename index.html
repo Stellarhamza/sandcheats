@@ -25,13 +25,26 @@
     <link rel="mask-icon" href="/favicon-192.png" color="#6B2FA0" />
     <meta name="msapplication-TileImage" content="/favicon-192.png" />
     <meta name="msapplication-TileColor" content="#000000" />
-    <!-- Fonts: non-blocking (critical for LCP/FCP) -->
+    <!-- Fonts: async CSS so mobile FCP/LCP are not blocked -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Sans:wght@400;500&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Sans:wght@400;500&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Sans:wght@400;500&display=swap"
+      />
+    </noscript>
 
     <meta name="theme-color" content="#060409" />
     <meta name="color-scheme" content="dark" />
@@ -85,19 +98,27 @@
 
     <link rel="me" href="https://discord.gg/zadeyo" />
     <link rel="me" href="https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie" />
-    <link rel="preload" as="image" href="/hero-sand-cheats-player-esp-lcp.webp" type="image/webp" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/hero-sand-cheats-player-esp-lcp-720.webp"
+      imagesrcset="/hero-sand-cheats-player-esp-lcp-720.webp 720w, /hero-sand-cheats-player-esp-lcp-960.webp 960w, /hero-sand-cheats-player-esp-lcp.webp 1280w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
     <link rel="image_src" href="https://sandcheats.net/sand-cheats-hero-og.jpg" />
     <!-- JSON-LD + analytics scripts are injected AFTER #seo-landmarks so auditors see headings/links first -->
   </head>
   <body style="background:#060409;margin:0;min-height:100vh;color:#f0ecff;font-family:Arial,Helvetica,sans-serif;line-height:1.75">
-    <main id="seo-landmarks" style="max-width:880px;margin:0 auto;padding:24px 16px 48px">
+    <main id="seo-landmarks" aria-hidden="false" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
       <header>
         <h1>Sand Cheats | SAND Raiders of Sophie Cheats – ESP &amp; Wallhack</h1>
         <p>Buy <strong>sand cheats</strong> and <strong>SAND Raiders of Sophie</strong> cheats — private Legit <strong>ESP</strong>, <strong>wallhack</strong>, and loot overlays from <strong>Sand Cheats</strong> with patch updates and Discord support.</p>
-        <p><img src="/sand-cheats-hero-og.jpg" width="1280" height="720" alt="Sand Cheats hero — SAND Raiders of Sophie dunes for ESP and wallhack" style="max-width:100%;height:auto;border-radius:12px" /></p>
-        <p><img src="/sand-cheats-player-esp-og.jpg" width="1280" height="720" alt="Sand Cheats player ESP and wallhack preview" style="max-width:100%;height:auto;border-radius:12px;margin-top:12px" /></p>
-        <p><img src="/sand-cheats-loot-esp-og.jpg" width="1280" height="720" alt="Sand Cheats loot ESP preview" style="max-width:100%;height:auto;border-radius:12px;margin-top:12px" /></p>
-        <p><img src="/logo.png" width="512" height="512" alt="Sand Cheats logo" style="max-width:120px;height:auto;margin-top:12px" /></p>
+        <p><img src="/sand-cheats-hero-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats hero — SAND Raiders of Sophie dunes for ESP and wallhack" /></p>
+        <p><img src="/sand-cheats-player-esp-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats player ESP and wallhack preview" /></p>
+        <p><img src="/sand-cheats-loot-esp-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats loot ESP preview" /></p>
+        <p><img src="/logo.png" width="512" height="512" loading="lazy" decoding="async" alt="Sand Cheats logo" /></p>
       </header>
 
       <article>
@@ -353,9 +374,9 @@
           gtag('config', 'AW-18148261006');
         };
         if ('requestIdleCallback' in window) {
-          requestIdleCallback(loadGtag, { timeout: 2500 });
+          requestIdleCallback(loadGtag, { timeout: 6000 });
         } else {
-          setTimeout(loadGtag, 1500);
+          setTimeout(loadGtag, 4000);
         }
       });
     </script>

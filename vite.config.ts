@@ -1,7 +1,6 @@
 import type { Plugin } from 'vite';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
 
 /**
  * Vite injects the entry <script> into <head>. SEO auditors that stop at the
@@ -35,9 +34,8 @@ function scriptsAfterSeoContent(): Plugin {
   };
 }
 
-// Vite SPA for Cloudflare Workers assets. Output: dist/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), scriptsAfterSeoContent()],
+  plugins: [react(), scriptsAfterSeoContent()],
   base: '/',
   build: {
     outDir: 'dist',
@@ -45,6 +43,7 @@ export default defineConfig({
     sourcemap: false,
     target: 'es2022',
     cssCodeSplit: true,
+    cssMinify: true,
     emptyOutDir: true,
     reportCompressedSize: true,
     chunkSizeWarningLimit: 600,
