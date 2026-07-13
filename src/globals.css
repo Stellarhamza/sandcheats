@@ -268,10 +268,9 @@ body::-webkit-scrollbar {
   -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
 }
 
-/* Skip layout/paint for offscreen sections (CWV) without changing visuals */
+/* content-visibility removed — it made SEO tools report 0 words / no paragraphs */
 .cv-auto {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 800px;
+  contain: none;
 }
 
 @media (max-width: 768px) {

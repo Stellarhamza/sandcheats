@@ -188,7 +188,7 @@ export function BlogListPage() {
             margin: '0 auto',
             lineHeight: 1.7,
           }}>
-            Guides on ESP, wallhack, safety, and loader updates.
+            Guides on Sand Cheats ESP, wallhack, safety, and loader updates.
           </p>
         </AnimatedSection>
       </div>
@@ -274,6 +274,7 @@ export function BlogListPage() {
             )}
           </>
         )}
+        <ClusterLinks title="More Sand Cheats pages and guides" maxGuides={15} />
       </div>
     </div>
   );

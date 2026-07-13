@@ -129,9 +129,10 @@ export function Footer() {
             }}>Guides</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <FootLink to="/blog">Sand Cheats blog</FootLink>
-              {SAND_CLUSTER.guides.slice(0, 4).map((g) => (
+              {SAND_CLUSTER.guides.map((g) => (
                 <FootLink key={g.to} to={g.to}>{g.label}</FootLink>
               ))}
+              <FootLink to="/sitemap.xml">Sand Cheats sitemap</FootLink>
             </div>
           </div>
 

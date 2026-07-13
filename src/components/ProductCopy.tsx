@@ -64,20 +64,20 @@ export function ProductCopy() {
             </figure>
             <Body>
               <p>
-                Sand Cheats is our private Legit ESP and wallhack service. We keep the loader updated after every client
-                change so your overlays stay aligned with the live build.
+                Sand Cheats is our private Legit ESP and wallhack service for SAND Raiders of Sophie. We keep the loader
+                updated after every client change so your overlays stay aligned with the live build.
               </p>
               <p>
                 There are no Rage features and no aimbot. You get visual ESP only: Enemy Box ESP, Enemy Line, Enemy Distance ESP,
                 Enemy Health ESP, Enemy Name, Skeleton ESP, Item ESP, Portal ESP, Ores ESP, Traps ESP, Chests ESP, and
-                Customizable ESP Colors.
+                Customizable ESP Colors — the core Sand Cheats wallhack and ESP package players search for.
               </p>
               <p>
-                The menu is available in English and Russian. Keep the loader current after every patch — outdated builds
-                are the usual failure mode.
+                The menu is available in English and Russian. Keep the Sand Cheats loader current after every SAND Raiders of Sophie
+                patch — outdated builds are the usual failure mode for ESP overlays.
               </p>
               <p>
-                External Legit ESP, priced at $35/month, delivered through Zadeyo after checkout.
+                External Legit ESP and wallhack, priced at $35/month, delivered through Zadeyo after you buy Sand Cheats.
               </p>
             </Body>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 28 }}>

@@ -1,9 +1,11 @@
 import { lazy, Suspense, type ReactNode } from 'react';
 import { HeroSection } from '../components/HeroSection';
 import { SafetySection } from '../components/SafetySection';
+import { PageQualityContent } from '../components/PageQualityContent';
 import { ProductCopy } from '../components/ProductCopy';
 import { FeaturesGrid } from '../components/FeaturesGrid';
 import { HowItWorks } from '../components/HowItWorks';
+import { InternalLinks } from '../components/InternalLinks';
 
 const Integrations = lazy(() => import('../components/Integrations').then((m) => ({ default: m.Integrations })));
 const BlogPreview = lazy(() => import('../components/BlogPreview').then((m) => ({ default: m.BlogPreview })));
@@ -19,29 +21,19 @@ export function HomePage() {
     <>
       <HeroSection />
       <SafetySection />
-      <div className="cv-auto">
-        <ProductCopy />
-      </div>
-      <div className="cv-auto">
-        <FeaturesGrid />
-      </div>
-      <div className="cv-auto">
-        <HowItWorks />
-      </div>
+      <PageQualityContent />
+      <ProductCopy />
+      <FeaturesGrid />
+      <HowItWorks />
       <Deferred>
-        <div className="cv-auto">
-          <Integrations />
-        </div>
+        <Integrations />
       </Deferred>
       <Deferred>
-        <div className="cv-auto">
-          <BlogPreview />
-        </div>
+        <BlogPreview />
       </Deferred>
+      <InternalLinks />
       <Deferred>
-        <div className="cv-auto">
-          <Testimonials />
-        </div>
+        <Testimonials />
       </Deferred>
       <Deferred>
         <SupportBanner />

@@ -104,9 +104,10 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* H1 — primary SEO heading (one per homepage) */}
+          {/* Single visible H1 — matches page <title> for structure + quality audits */}
           <div style={{ animation: 'fadeUp 0.7s ease both', animationDelay: '0.1s' }}>
-            <h1 style={{
+            <h1
+              style={{
               fontFamily: 'var(--font-display)',
               fontWeight: 900,
               letterSpacing: '-0.02em',

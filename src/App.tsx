@@ -40,15 +40,15 @@ function RouteSeo() {
   if (currentPath === '/blog') {
     return (
       <Seo
-        title="Sand Cheats Blog | SAND Raiders of Sophie Cheats Guides"
+        title="Sand Cheats Blog | ESP, Wallhack & Safety Guides"
         description="Sand cheats and SAND Raiders of Sophie cheats blog — ESP, wallhack, and safety guides for private Legit overlays."
         path="/blog"
         image={BLOG_OG_IMAGE}
-        imageAlt="Sand Cheats blog — SAND Raiders of Sophie cheats guides"
+        imageAlt="Sand Cheats blog — ESP, wallhack and safety guides"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'Sand Cheats Blog | SAND Raiders of Sophie Cheats Guides',
+          name: 'Sand Cheats Blog | ESP, Wallhack & Safety Guides',
           description: 'Guides and comparisons for sand cheats, SAND Raiders of Sophie cheats ESP, safety, and patch updates.',
           url: `${SITE_URL}/blog`,
           image: BLOG_OG_IMAGE,
@@ -135,10 +135,10 @@ function RouteSeo() {
     return (
       <Seo
         title="Buy Sand Cheats | SAND Raiders of Sophie Cheats – ESP & Wallhack"
-        description="Buy sand cheats and SAND Raiders of Sophie cheats — ESP, wallhack, and loot overlays. Private Legit Sand Cheats with patch updates on Steam."
+        description="Buy Sand Cheats for SAND Raiders of Sophie — Legit ESP, wallhack, and loot overlays. $35/month with patch updates on Steam."
         path="/buy"
         image={BUY_OG_IMAGE}
-        imageAlt="Buy Sand Cheats — ESP and wallhack preview"
+        imageAlt="Buy Sand Cheats — SAND Raiders of Sophie ESP and wallhack"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'Product',

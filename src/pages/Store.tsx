@@ -168,7 +168,7 @@ export function StorePage() {
             marginBottom: '16px',
           }}>
             <span className="gradient-text">Buy Sand Cheats</span>
-            <br />ESP &amp; Wallhack
+            <br />SAND Raiders of Sophie Cheats – ESP &amp; Wallhack
           </h1>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -479,9 +479,9 @@ export function StorePage() {
 
           {/* 8. Related routes */}
           <ClusterLinks
-            title="Related guides and setup routes"
+            title="Related Sand Cheats guides and setup routes"
             includeHub={false}
-            maxGuides={7}
+            maxGuides={15}
           />
           <p style={{ marginTop: 16, fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
             <Link to="/" style={{ color: 'var(--accent-bright)' }}>Sand Cheats home</Link>

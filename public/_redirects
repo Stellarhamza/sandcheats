@@ -1,0 +1,8 @@
+# Canonical host: https://sandcheats.net (non-www)
+# www and http always 301 to https apex
+
+https://www.sandcheats.net/* https://sandcheats.net/:splat 301
+http://www.sandcheats.net/* https://sandcheats.net/:splat 301
+http://sandcheats.net/* https://sandcheats.net/:splat 301
+
+/index.html / 301
