@@ -125,7 +125,7 @@ ${blogLinks}
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Sand Cheats",
-      "alternateName": ["sandcheats", "SandCheats", "Sand Cheats ESP"],
+      "alternateName": ["sandcheats", "SandCheats", "Sand Cheats"],
       "url": "https://sandcheats.net/",
       "description": ${JSON.stringify(SITE_DESCRIPTION)},
       "potentialAction": {
@@ -210,7 +210,7 @@ ${blogLinks}
           "name": "What is Sand Cheats?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sand Cheats is a private Legit ESP and wallhack product for SAND: Raiders of Sophie. It is not a free single-player trainer and not related to SAND LAND trainers. Buy Sand Cheats for player ESP, loot ESP, and wallhack overlays with patch updates."
+            "text": "Sand Cheats is a private Legit cheats and wallhack product for SAND: Raiders of Sophie. It is not a free single-player trainer and not related to SAND LAND trainers. Buy Sand Cheats for player visuals, loot overlays, and wallhack with patch updates."
           }
         },
         {
@@ -218,7 +218,7 @@ ${blogLinks}
           "name": "Is Sand Cheats a free trainer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Sand Cheats is a paid private Legit ESP service for SAND Raiders of Sophie, delivered through Zadeyo at $35 per month with loader access, wipe updates, and Discord support."
+            "text": "No. Sand Cheats is a paid private Legit cheats service for SAND Raiders of Sophie, delivered through Zadeyo at $35 per month with loader access, wipe updates, and Discord support."
           }
         },
         {
