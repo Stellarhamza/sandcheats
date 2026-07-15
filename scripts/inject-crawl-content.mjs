@@ -2,25 +2,25 @@ import fs from 'fs';
 import { BLOG_META } from '../src/data/blogMeta.ts';
 import { HOME_ARTICLE } from '../src/seo/homeArticle.ts';
 import { SHARE_FACEBOOK, SHARE_REDDIT, SHARE_TWITTER } from '../src/seo/share.ts';
+import { SITE_DESCRIPTION, SITE_H1, SITE_KEYWORDS, SITE_TITLE } from '../src/seo/titles.ts';
+
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 const safeParas = HOME_ARTICLE.paragraphs
   .map((p) => {
-    const t = p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    return `          <p>${t}</p>`;
+    return `          <p>${esc(p)}</p>`;
   })
   .join('\n');
 
 const safeH3s = HOME_ARTICLE.h3s
   .map((block) => {
-    const t = block.text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const title = block.title.replace(/&/g, '&amp;');
-    return `        <h3>${title}</h3>\n          <p>${t}</p>`;
+    return `        <h3>${esc(block.title)}</h3>\n          <p>${esc(block.text)}</p>`;
   })
   .join('\n');
 
 const blogLinks = BLOG_META.map(
   (p) =>
-    `            <li><a href="/blog/${p.slug}">${p.title.replace(/&/g, '&amp;')}</a></li>`
+    `            <li><a href="/blog/${p.slug}">${esc(p.title)}</a></li>`
 ).join('\n');
 
 /**
@@ -32,8 +32,8 @@ const blogLinks = BLOG_META.map(
 const body = `  <body style="background:#060409;margin:0;min-height:100vh;color:#f0ecff;font-family:Arial,Helvetica,sans-serif;line-height:1.75">
     <main id="seo-landmarks" aria-hidden="false" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
       <header>
-        <h1>Sand Cheats – SAND ESP &amp; Wallhack</h1>
-        <p>Buy sand cheats and SAND Raiders of Sophie cheats — private Legit ESP, wallhack, and loot overlays from Sand Cheats with patch updates and Discord support.</p>
+        <h1>${esc(SITE_H1)}</h1>
+        <p>${esc(SITE_DESCRIPTION)}</p>
         <p><img src="/sand-cheats-hero-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats hero — SAND Raiders of Sophie dunes for ESP and wallhack" /></p>
         <p><img src="/sand-cheats-player-esp-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats player ESP and wallhack preview" /></p>
         <p><img src="/sand-cheats-loot-esp-og.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Sand Cheats loot ESP preview" /></p>
@@ -41,7 +41,7 @@ const body = `  <body style="background:#060409;margin:0;min-height:100vh;color:
       </header>
 
       <article>
-        <h2>${HOME_ARTICLE.h2.replace(/&/g, '&amp;')}</h2>
+        <h2>${esc(HOME_ARTICLE.h2)}</h2>
 ${safeParas}
 ${safeH3s}
       </article>
@@ -91,7 +91,8 @@ ${blogLinks}
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Sand Cheats – SAND ESP & Wallhack",
+      "name": ${JSON.stringify(SITE_TITLE)},
+      "alternateName": ["Sand Cheats", "sandcheats", "SandCheats"],
       "url": "https://sandcheats.net/",
       "image": "https://sandcheats.net/sand-cheats-hero-og.jpg",
       "screenshot": [
@@ -115,8 +116,8 @@ ${blogLinks}
         "itemCondition": "https://schema.org/NewCondition",
         "url": "https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie"
       },
-      "description": "Buy sand cheats and SAND Raiders of Sophie cheats with ESP and wallhack. Private Legit overlays and patch updates on Steam.",
-      "keywords": "sand cheats, sand raiders of sophie cheats, SAND Raiders of Sophie cheats, sand raiders of sophie ESP, sand raiders of sophie wallhack, sand aimbot, sand loot ESP, sandcheats, raiders of sophie cheats"
+      "description": ${JSON.stringify(SITE_DESCRIPTION)},
+      "keywords": ${JSON.stringify(SITE_KEYWORDS)}
     }
     </script>
     <script type="application/ld+json">
@@ -124,8 +125,9 @@ ${blogLinks}
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Sand Cheats",
+      "alternateName": ["sandcheats", "SandCheats", "Sand Cheats ESP"],
       "url": "https://sandcheats.net/",
-      "description": "Buy sand cheats and SAND Raiders of Sophie cheats with ESP and wallhack. Private Legit overlays and patch updates on Steam.",
+      "description": ${JSON.stringify(SITE_DESCRIPTION)},
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://sandcheats.net/?q={search_term_string}",
@@ -138,6 +140,7 @@ ${blogLinks}
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Sand Cheats",
+      "alternateName": ["sandcheats", "SandCheats"],
       "url": "https://sandcheats.net/",
       "logo": {
         "@type": "ImageObject",
@@ -184,7 +187,7 @@ ${blogLinks}
           "height": 720
         }
       ],
-      "description": "Buy sand cheats and SAND Raiders of Sophie cheats with ESP and wallhack. Private Legit overlays and patch updates on Steam.",
+      "description": ${JSON.stringify(SITE_DESCRIPTION)},
       "sameAs": [
         "https://discord.gg/zadeyo",
         "https://zadeyo.com/go/QRH?to=%2Fproducts%2Fsand-raiders-of-sophie"
@@ -202,6 +205,22 @@ ${blogLinks}
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Sand Cheats?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sand Cheats is a private Legit ESP and wallhack product for SAND: Raiders of Sophie. It is not a free single-player trainer and not related to SAND LAND trainers. Buy Sand Cheats for player ESP, loot ESP, and wallhack overlays with patch updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Sand Cheats a free trainer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Sand Cheats is a paid private Legit ESP service for SAND Raiders of Sophie, delivered through Zadeyo at $35 per month with loader access, wipe updates, and Discord support."
+          }
+        },
         {
           "@type": "Question",
           "name": "Is Sand Cheats a Rage or Legit cheat?",

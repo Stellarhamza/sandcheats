@@ -183,7 +183,18 @@ function RouteSeo() {
           width: 1280,
           height: 720,
         },
-        isPartOf: { '@type': 'WebSite', name: 'Sand Cheats', url: SITE_URL },
+        isPartOf: {
+          '@type': 'WebSite',
+          name: 'Sand Cheats',
+          alternateName: ['sandcheats', 'SandCheats', 'Sand Cheats ESP'],
+          url: SITE_URL,
+        },
+        about: {
+          '@type': 'Thing',
+          name: 'Sand Cheats',
+          description:
+            'Private Legit ESP and wallhack for SAND: Raiders of Sophie — not a free trainer and not SAND LAND cheats.',
+        },
       }}
     />
   );

@@ -118,8 +118,8 @@ export function HeroSection() {
               <span className="gradient-text" style={{ display: 'block', fontSize: 'clamp(1.65rem, 6.2vw, 5.2rem)', lineHeight: 1.05, wordBreak: 'break-word' }}>
                 Sand Cheats
               </span>
-              <span style={{ display: 'block', color: 'var(--text-primary)', fontSize: 'clamp(1.35rem, 3vw, 2.6rem)', lineHeight: 1.2, marginTop: '10px' }}>
-                SAND ESP & Wallhack
+              <span style={{ display: 'block', color: 'var(--text-primary)', fontSize: 'clamp(1.2rem, 2.8vw, 2.35rem)', lineHeight: 1.2, marginTop: '10px' }}>
+                Raiders of Sophie ESP &amp; Wallhack
               </span>
             </h1>
           </div>

@@ -19,6 +19,7 @@ export const HOME_ARTICLE = {
     },
   ],
   paragraphs: [
+    'Sand Cheats is the brand behind private Legit ESP and wallhack for SAND: Raiders of Sophie. If you searched for sand cheats looking for player ESP, loot ESP, or wallhack — not a free single-player trainer and not SAND LAND cheats — this is the official Sand Cheats product page.',
     'Sand Cheats is a private Legit ESP and wallhack service built for SAND Raiders of Sophie. If you searched for sand cheats, sand raiders of sophie cheats, ESP, or wallhack, this page explains what you get, how delivery works, and how to stay safer after patches.',
     'SAND Raiders of Sophie is a desert extraction shooter where information wins fights. Sand Cheats focuses on clear visuals: enemy box ESP, enemy line, distance tags, health bars, names, skeleton ESP, item ESP, portal ESP, ores ESP, traps ESP, chests ESP, and customizable ESP colors. There is no Rage mode and no aimbot in the live Sand Cheats product — only Legit-style wallhack and overlay reads.',
     'Players buy Sand Cheats when they want wipe-ready overlays without clutter. You can keep a minimal ESP set for clean extracts or enable the full wallhack stack when lobbies are stacked. Customizable ESP colors help labels stay readable in bright dunes and dark interiors across SAND Raiders of Sophie maps.',
