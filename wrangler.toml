@@ -6,7 +6,7 @@
 #   Type: CNAME | Name: www | Target: sandcheats.net | Proxy: ON
 # Then attach www.sandcheats.net as a Workers custom domain (same as apex).
 
-name = "sandcheats"
+name = "sandcheatss"
 main = "worker/index.js"
 compatibility_date = "2026-07-12"
 workers_dev = true
